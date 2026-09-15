@@ -1,0 +1,6 @@
+{
+  "examples_compared": 10,
+  "exact_agreement": 0.2,
+  "quadratic_weighted_kappa": -0.129,
+  "score_scale": "Both human and LLM use direct 1-5 overall score"
+}

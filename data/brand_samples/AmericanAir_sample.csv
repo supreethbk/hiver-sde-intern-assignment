@@ -1,0 +1,101 @@
+tweet_id,author_id,inbound,created_at,text,response_tweet_id,in_response_to_tweet_id
+996,AmericanAir,False,Tue Oct 31 22:27:30 +0000 2017,@115904 We'll be sure to pass along your kind words! #AATeam,,997.0
+998,AmericanAir,False,Tue Oct 31 22:12:14 +0000 2017,@115904 Our apologies for the delay in responding to you. Have you made it to LAX? Let us know if you still need assistance.,997,999.0
+1001,AmericanAir,False,Tue Oct 31 22:24:05 +0000 2017,"@115905 Aww, that's definitely a future pilot in the making! #HappyHalloween",,1002.0
+1003,AmericanAir,False,Tue Oct 31 22:22:37 +0000 2017,@115906 This is a great option for customers who want to share miles and it's cheaper than having to purchase them.,1004,1005.0
+1006,AmericanAir,False,Tue Oct 31 22:44:51 +0000 2017,@115906 We're sorry for your frustration.,,1004.0
+1008,AmericanAir,False,Tue Oct 31 22:19:34 +0000 2017,"@115907 It's always a pleasure to have you on board, John. Have a wonderful flight over the pond!",,1009.0
+1061,AmericanAir,False,Tue Oct 31 22:17:44 +0000 2017,"@115908 Pilots, Potter, Pumpkins and Skeletons...oh my! They're all adorable.",,1062.0
+1064,AmericanAir,False,Tue Oct 31 22:14:35 +0000 2017,@115909 We're glad you got to kick back and enjoy a show while flying! Thanks for your kind words.,,1065.0
+1916,AmericanAir,False,Tue Oct 31 22:44:15 +0000 2017,@116142 We never want your experience to be anything less than perfect. We're sorry the Wi-Fi was slower than expected.,,1917.0
+1918,AmericanAir,False,Tue Oct 31 22:44:13 +0000 2017,"@116143 Thanks for the shout-out and for stopping by, Marc! We'll pass this on to our SFO Admirals Club managers.",,1919.0
+1920,AmericanAir,False,Tue Oct 31 22:43:15 +0000 2017,@116144 We're sorry for any difficulties that you've experienced. Please contact our Web Technical Support folks at 800-222-2377.,1921,1922.0
+1923,AmericanAir,False,Tue Oct 31 23:24:55 +0000 2017,@116144 They'll be more than happy to walk you through it and help with the booking process.,"1924,1925",1921.0
+1926,AmericanAir,False,Tue Oct 31 23:43:02 +0000 2017,@116144 We're sorry for the long wait. The next available agent will be with you as soon as possible.,1927,1925.0
+1928,AmericanAir,False,Tue Oct 31 23:51:47 +0000 2017,@116144 Fares sell in real time. We're sorry we weren't able to snag the lower fare for you.,"1929,1930",1927.0
+1931,AmericanAir,False,Wed Nov 01 00:28:29 +0000 2017,@116144 We're glad our Reservations team was able to help.,1932,1930.0
+1934,AmericanAir,False,Tue Oct 31 22:42:44 +0000 2017,@116145 We're sorry for your frustration. Any damage must be assessed in person within 24 hours of arrival by airport personnel.,,1935.0
+1936,AmericanAir,False,Mon Oct 30 14:49:47 +0000 2017,@116145 An airport agent will be happy to take a look at your bag to assist with a claim but damage must be assessed in person.,1935,1937.0
+1938,AmericanAir,False,Sun Oct 29 17:16:31 +0000 2017,"@116145 Our team will need to assess the damage in person, please see an agent for assistance.",1937,1939.0
+1940,AmericanAir,False,Sun Oct 29 17:11:01 +0000 2017,@116145 We always want to take care of your bags. We're you able to file a claim with our Baggage team?,1939,1941.0
+1944,AmericanAir,False,Tue Oct 31 22:36:12 +0000 2017,@116146 We're happy when you're happy! That sure does look delicious.,,1945.0
+3088,AmericanAir,False,Tue Oct 31 22:58:58 +0000 2017,@116415 We always want everyone to be comfy. You can ask our crew about any available open seats.,"3089,3090",3091.0
+3094,AmericanAir,False,Tue Oct 31 23:03:40 +0000 2017,@116415 You'd have to speak with our crew and ask what is available. It would need to be in the same cabin and in the same type of seat.,"3095,3096",3090.0
+3104,AmericanAir,False,Tue Oct 31 22:56:33 +0000 2017,"@116417 Oh my, that #guac looks delish! Thanks for always sharing the good and the bad, Kevin. #yummy",,3105.0
+3106,AmericanAir,False,Tue Oct 31 22:55:03 +0000 2017,@116418 We'd like to share this feedback. Please DM your record locator.,,3107.0
+3108,AmericanAir,False,Tue Oct 31 22:45:53 +0000 2017,@116418 Your guitar must fit underneath the seat in front of you or in an overhead bin. Please see details here: https://t.co/AqqDo7qAE3.,3107,3109.0
+3110,AmericanAir,False,Tue Oct 31 22:51:00 +0000 2017,@116419 Please share your record locator via DMs and we can take look.,,3111.0
+3112,AmericanAir,False,Tue Oct 31 22:44:42 +0000 2017,"@116420 Did you file a report with us? If you did, please send us a DM and include that in so we can take a look.",3113,3114.0
+3572,AmericanAir,False,Sun Nov 26 00:28:22 +0000 2017,"@116565 We hear you, Liam. We're working as fast as we can to update our fleet and will soon have super fast Wi-Fi to stream movies.",3573,3574.0
+3575,AmericanAir,False,Sun Nov 26 00:31:50 +0000 2017,@116565 We appreciate your feedback!,,3573.0
+3576,AmericanAir,False,Sun Nov 26 00:26:36 +0000 2017,@116566 Thanks for your kind words! We hope you have a fantastic evening.,,3577.0
+3578,AmericanAir,False,Sun Nov 26 00:22:21 +0000 2017,"@116567 We're very sorry about that, Perla. We always want your experience to go smoothly.",,3579.0
+3580,AmericanAir,False,Sun Nov 26 00:20:12 +0000 2017,"@116568 That's the most current info, but if there is any further update our gate team will provide it as it becomes available.",3581,3582.0
+3584,AmericanAir,False,Sun Nov 26 00:15:52 +0000 2017,@116568 Looks like it has a maintenance delay and it's currently scheduled to take off at 10:10p.,3582,3585.0
+3586,AmericanAir,False,Sun Nov 26 00:16:37 +0000 2017,@116569 Our crew is there to serve you and not deceive you in any way. We're also here to help so please share your flight details via DMs.,"3587,3588",3589.0
+3590,AmericanAir,False,Sun Nov 26 00:32:59 +0000 2017,"@116569 Our offer still stands to assist, Andrew.",3591,3588.0
+3593,AmericanAir,False,Sun Nov 26 00:06:06 +0000 2017,@116569 We're sorry for the delay. The previous pilot may not have been aware of the problem. We appreciate your patience.,3592,3594.0
+3595,AmericanAir,False,Sun Nov 26 00:15:44 +0000 2017,"@116570 Please DM your record locator, we'd like to forward this feedback.",,3596.0
+3597,AmericanAir,False,Sun Nov 26 00:09:22 +0000 2017,"@116570 We're sorry for the extended travel time today, Ally. Our team is working hard to reunite you with your bags.",3596,3598.0
+3599,AmericanAir,False,Sun Nov 26 00:12:47 +0000 2017,@116571 We're going to forward this to our flight service leadership team for appropriate review.,3600,3601.0
+3606,AmericanAir,False,Sun Nov 26 00:12:39 +0000 2017,"@116572 We see you're arriving just a few minutes early, we're always working to get you to your destination as soon as possible.",,3607.0
+3608,AmericanAir,False,Sun Nov 26 00:11:40 +0000 2017,"@116573 Hi, Matt, we've your info but we'd like to verify which trip you'd like to cancel. Please DM your record locator with the unwanted return.",,3609.0
+3610,AmericanAir,False,Sun Nov 26 00:11:32 +0000 2017,@116574 Thanks for your loyalty! It means the world to us.,,3611.0
+3612,AmericanAir,False,Sun Nov 26 00:10:23 +0000 2017,"@116575 You wouldn't get those perks on BA, Martin.",,3613.0
+3614,AmericanAir,False,Sun Nov 26 00:09:30 +0000 2017,"@116576 Our sincere apologies for any last minute gate changes, we know that's not fun. Please let us know if we can help here.",3615,3616.0
+3617,AmericanAir,False,Sun Nov 26 00:08:01 +0000 2017,"@116577 We apologize for the inconvenience. Travelers submit their paperwork to us, but aren't required to show it to everyone on board.",,3618.0
+3604,AmericanAir,False,Sun Nov 26 00:03:53 +0000 2017,@116571 We expect all of our flyers to be courteous to each other and sadly this gentleman wasn't today.,,3603.0
+3619,AmericanAir,False,Sun Nov 26 00:01:18 +0000 2017,@116578 She sure is a gorgeous bird!,,3620.0
+3621,AmericanAir,False,Sun Nov 26 00:00:19 +0000 2017,@116579 Thanks for joining us on board!,3622,3623.0
+3626,AmericanAir,False,Sun Nov 26 01:01:44 +0000 2017,@116579 #ALLLLLTheFeelz,3627,3625.0
+3629,AmericanAir,False,Sun Nov 26 00:00:06 +0000 2017,"@116580 We're sorry for the extra travel time today, Rocky. Please DM us your record locator and well take a look.",,3630.0
+3632,AmericanAir,False,Sat Nov 25 23:59:52 +0000 2017,@116577 Any dogs you see outside of a kennel are either service or emotional support animals.,"3633,3634",3635.0
+3637,AmericanAir,False,Sat Nov 25 23:53:25 +0000 2017,"@116577 We're sorry for the inconvenience, Nick. Did you ask a crew member if you could move to another seat?",3635,3638.0
+4063,AmericanAir,False,Tue Oct 31 23:12:26 +0000 2017,"@116682 Our service should be consistent all across the board, Stuart. So sorry if you experienced otherwise.",4064,4065.0
+4066,AmericanAir,False,Wed Nov 01 02:08:37 +0000 2017,"@116682 We're glad that our team was able to help, but we appreciate this feedback.",,4064.0
+4067,AmericanAir,False,Tue Oct 31 23:06:13 +0000 2017,@116683 Congrats on getting married! We're looking forward to having lots of excited wedding guests. That's a fantastic deal!,,4068.0
+4069,AmericanAir,False,Tue Oct 31 23:00:29 +0000 2017,"@116684 Whoa, what's going on that you're feeling this way towards us?",4070,4071.0
+4072,AmericanAir,False,Tue Oct 31 23:10:43 +0000 2017,@116684 It sounds like you had a Basic Economy ticket. You're only able to have one personal item underneath the seat when you have this ticket type,"4073,4074",4070.0
+5334,AmericanAir,False,Tue Oct 31 23:27:56 +0000 2017,@116938 We're glad that our team was able to help. Have a fantastic evening!,,5335.0
+6555,AmericanAir,False,Mon Oct 09 00:35:30 +0000 2017,@117155 We have some of the best crew in the business and want you to know that we're glad to have you fly with us today. #smilesfromustoyou!,,6556.0
+6598,AmericanAir,False,Mon Oct 09 00:34:31 +0000 2017,"@117161 We try to upgrade as much as possible and will continue to do that. Our apologies that you haven't got upgraded as much as you'd like, Wael.",6599,6600.0
+6601,AmericanAir,False,Mon Oct 09 00:54:56 +0000 2017,"@117161 We're truly sorry this has been your experience with us, as we always try to truly hear our customer feedback. We hope you remain loyal.",,6599.0
+6602,AmericanAir,False,Sun Oct 08 23:59:16 +0000 2017,"@117161 We never want you to feel this way, and appreciate the feedback you provide!","6600,6603",6604.0
+6623,AmericanAir,False,Mon Oct 09 00:42:44 +0000 2017,@117169 Our sincere apologies for any rudeness. We welcome all families to fly with us and want this to be an exciting experience for your kids.,,6624.0
+6625,AmericanAir,False,Sun Oct 08 19:24:12 +0000 2017,"@117169 Oh my, we'd like to have more details about what happened. We always expect our team to treat our customers courteously and friendly.","6626,6627,6624",6628.0
+6910,AmericanAir,False,Mon Oct 09 00:44:15 +0000 2017,@117181 Your carry-on bag is oversized by the dimensions you gave us. There will be a charge since you'll have to check it. https://t.co/AqqDo7qAE3.,6911,6912.0
+6913,AmericanAir,False,Mon Oct 09 01:03:18 +0000 2017,@117181 You'll get charged just like a normal checked bag and the charge amount depends on your ticket. Please DM your record locator so we can see.,,6911.0
+6929,AmericanAir,False,Mon Oct 09 00:50:31 +0000 2017,@117187 That’s #fAAntastic to hear how smooth our pilot’s landing was. Please DM your record locator and we’ll properly recognize our crew. #AATeam,,6930.0
+7182,AmericanAir,False,Tue Oct 31 23:30:02 +0000 2017,@117240 We want to make sure communication is crystal clear. Please DM your record locator so we can share your feedback.,7183,7184.0
+8739,AmericanAir,False,Tue Oct 31 23:56:50 +0000 2017,@117544 We're sorry you feel that way. We appreciate your feedback.,,8740.0
+8741,AmericanAir,False,Tue Oct 31 23:55:02 +0000 2017,@117545 We're sorry for the wait tonight. We'll have you bags out to you as soon as possible. https://t.co/vpkBeWiqTq,,8742.0
+8743,AmericanAir,False,Tue Oct 31 23:51:20 +0000 2017,@117546 We're are almost there just one last leg of your trip and you'll be #homesweethome.,,8744.0
+8745,AmericanAir,False,Tue Oct 31 23:51:06 +0000 2017,@117547 Thanks for the shout-out to PVD! We'd love to forward this on to our #AATeam. Please follow and DM your record locator.,,8746.0
+8747,AmericanAir,False,Tue Oct 31 23:49:03 +0000 2017,"@117549 Our apologies for the delay, Heather. You should be in the air shortly.",,8748.0
+9447,AmericanAir,False,Wed Nov 01 00:11:05 +0000 2017,"@117693 We're thrilled you had the real American experience today, John! Thanks for your loyalty.",,9448.0
+9450,AmericanAir,False,Wed Nov 01 00:08:36 +0000 2017,"@117694 We're glad we could help! We're here anytime, Curtis.",,9451.0
+9453,AmericanAir,False,Wed Nov 01 00:07:28 +0000 2017,@117695 We're excited to have you on board! Thanks for letting us take you on this #AAdventure.,9454,9455.0
+9456,AmericanAir,False,Wed Nov 01 00:52:03 +0000 2017,"@117695 Wear comfy clothes, stretch prior to boarding and throughout the flight. Also, make sure you drink plenty of water.",9457,9454.0
+9458,AmericanAir,False,Wed Nov 01 00:53:26 +0000 2017,@117695 We can't wait!,,9457.0
+9459,AmericanAir,False,Wed Nov 01 00:06:34 +0000 2017,@117696 We'd like more info to see if we can help. Please DM your bag file number.,,9460.0
+9461,AmericanAir,False,Wed Nov 01 00:01:32 +0000 2017,"@117697 Oh my, please DM your record locator and include your email &amp; mailing address. Lastly, provide as many details as possible.",,9462.0
+9463,AmericanAir,False,Wed Nov 01 00:00:22 +0000 2017,"@117698 We're sorry for the situation, but we're happy you're making the best of it, John. Please let us know if we can help.",,9464.0
+9940,AmericanAir,False,Wed Nov 01 00:29:33 +0000 2017,@117839 We're glad you're enjoying some of our #AATeam's great costumes. Their treat is getting to serve our best customers.,,9941.0
+9942,AmericanAir,False,Wed Nov 01 00:24:33 +0000 2017,"@117840 We know how important staying connected is, Kyle. Have a fantastic flight!",,9943.0
+9945,AmericanAir,False,Wed Nov 01 00:22:30 +0000 2017,@117841 Width can vary just slightly throughout the cabin. Main Cabin Extra seats always have 4-6 inches of extra legroom.,9946,9947.0
+9948,AmericanAir,False,Wed Nov 01 00:20:59 +0000 2017,"@117842 We're sorry for any rudeness. If you have a Basic Economy ticket, then only a personal item would be allowed on board.",,9949.0
+9950,AmericanAir,False,Wed Nov 01 00:20:17 +0000 2017,@117843 A specialist is still carefully reviewing this. Someone will be in direct contact soon.,,9951.0
+9952,AmericanAir,False,Wed Nov 01 00:20:12 +0000 2017,@117844 Hi there! Our Reservations team can check on flights for you at 800-433-7300.,,9953.0
+10765,AmericanAir,False,Wed Nov 01 00:34:32 +0000 2017,@117992 No problem at all. It’s a huge honor for us to support our troops.,,10766.0
+11190,AmericanAir,False,Wed Nov 01 00:54:18 +0000 2017,@118124 Please send the requested info via DM. We need your contact info (phone and email).,,11191.0
+12150,AmericanAir,False,Wed Nov 01 01:27:26 +0000 2017,"@118402 If we can take a look, then please DM your record locator and details.",12151,12152.0
+12153,AmericanAir,False,Wed Nov 01 01:23:04 +0000 2017,"@118402 We're sorry that this has been your experience, is there some way we can help?",12152,12154.0
+12155,AmericanAir,False,Wed Nov 01 01:27:01 +0000 2017,@118403 Please DM your record locator. We'll take a closer look for you.,12156,12157.0
+12158,AmericanAir,False,Wed Nov 01 01:26:15 +0000 2017,"@118404 We'd like to forward this along, Mindy. Please DM your record locator.",,12159.0
+12160,AmericanAir,False,Wed Nov 01 01:25:49 +0000 2017,@118405 Please DM your record locator. We'd like to forward this to the correct team.,,12161.0
+12168,AmericanAir,False,Wed Nov 01 01:24:50 +0000 2017,@118406 We'll make sure to let our team know about this. Our friends @116462 can also take a look.,"12169,12170",12171.0
+12172,AmericanAir,False,Wed Nov 01 01:48:08 +0000 2017,@118406 We're very sorry. We've forwarded it to our team that handles Wi-Fi.,,12169.0
+12173,AmericanAir,False,Wed Nov 01 01:54:55 +0000 2017,@118406 The experience of our most loyal customers is paramount. We're installing a new type of much faster Wi-Fi on much of our fleet.,"12174,12175",12170.0
+12176,AmericanAir,False,Wed Nov 01 03:31:50 +0000 2017,"@118406 We're sorry if you had a bad experience with our team, Kay. Please let us know if we ca help in some way,",,12174.0
+13298,AmericanAir,False,Wed Nov 01 01:56:10 +0000 2017,@118743 Please DM your record locator. We'd like to share this feedback with the Flight Service leadership team.,13299,13300.0
+13301,AmericanAir,False,Wed Nov 01 01:52:58 +0000 2017,@118743 We understand that's important to update info quickly and we appreciate your feedback on this.,13300,13302.0

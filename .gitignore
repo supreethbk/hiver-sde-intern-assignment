@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+data/raw/twcs.csv
+results/amazonhelp_embeddings_3k.pkl

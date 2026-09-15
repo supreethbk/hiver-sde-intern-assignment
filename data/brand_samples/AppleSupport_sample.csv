@@ -1,0 +1,102 @@
+tweet_id,author_id,inbound,created_at,text,response_tweet_id,in_response_to_tweet_id
+696,AppleSupport,False,Tue Oct 31 22:27:49 +0000 2017,@115854 We're here for you. Which version of the iOS are you running? Check from Settings &gt; General &gt; About.,697,698.0
+699,AppleSupport,False,Tue Oct 31 22:36:27 +0000 2017,@115854 Lets take a closer look into this issue. Select the following link to join us in a DM and we'll go from there. https://t.co/GDrqU22YpT,,697.0
+701,AppleSupport,False,Tue Oct 31 22:26:49 +0000 2017,@115855 Let's go to DM for the next steps. DM us here: https://t.co/GDrqU22YpT,,702.0
+703,AppleSupport,False,Tue Oct 31 22:09:52 +0000 2017,@115855 Any steps tried since it started last night?,702,704.0
+705,AppleSupport,False,Tue Oct 31 21:57:00 +0000 2017,@115855 That's great it has iOS 11.1 as we can rule out being outdated. Any steps tried since this started? Do you recall when it started?,"706,704",707.0
+708,AppleSupport,False,Tue Oct 31 21:43:15 +0000 2017,@115855 We'd like to look into this with you. Which model do you have and is iOS 11.1 installed? Any steps tried so far?,707,709.0
+712,AppleSupport,False,Tue Oct 31 22:26:29 +0000 2017,"@115856 Hey, let's work together to figure out what's going on. Meet us in DM and we'll continue from there. https://t.co/GDrqU22YpT",713,714.0
+716,AppleSupport,False,Tue Oct 31 22:24:54 +0000 2017,@115857 We'd like to investigate further with you. Send us a DM and we can troubleshoot more from there. https://t.co/GDrqU22YpT,,717.0
+718,AppleSupport,False,Tue Oct 31 22:05:00 +0000 2017,"@115857 Fill us in on what is happening, then we can help out from there.",717,719.0
+720,AppleSupport,False,Tue Oct 31 22:24:27 +0000 2017,@115859 We've received your DM and will continue there.,,721.0
+722,AppleSupport,False,Tue Oct 31 22:17:30 +0000 2017,@115859 What's going on? We're hapy to help if we can. https://t.co/GDrqU22YpT,721,723.0
+724,AppleSupport,False,Tue Oct 31 22:22:31 +0000 2017,"@115860 Reach out to us via DM, and we can take a look at this with you. https://t.co/GDrqU22YpT",,725.0
+729,AppleSupport,False,Tue Oct 31 20:55:34 +0000 2017,"@115861 You're in the right place; we'll do all we can to help. To start, let us know what iOS version is installed via DM: https://t.co/GDrqU22YpT",728,730.0
+732,AppleSupport,False,Tue Oct 31 22:22:31 +0000 2017,@115863 Go ahead and send us a DM please. Let us know the country you're in.,,733.0
+734,AppleSupport,False,Tue Oct 31 22:22:00 +0000 2017,"@115864 We'd like to help, but we'll need more details. What's happening on your device and which model is it? Do you have iOS 11.1?",735,736.0
+737,AppleSupport,False,Tue Oct 31 22:33:34 +0000 2017,"@115864 To make sure, is iOS 11.1 installed on it currently? Also, any steps tried so far? DM us here: https://t.co/GDrqU22YpT",,735.0
+738,AppleSupport,False,Tue Oct 31 22:21:30 +0000 2017,@115865 Thanks! Which iOS version is currently showing in Settings &gt; General &gt; About?,739,740.0
+741,AppleSupport,False,Tue Oct 31 22:46:26 +0000 2017,"@115865 Let's check Settings &gt; General &gt; Software Update. iOS 11.1 was released earlier today. If you see it, please backup &amp; update.",742,739.0
+743,AppleSupport,False,Tue Oct 31 23:12:00 +0000 2017,"@115865 Our pleasure. If you're still having issues after a back up and update, contact us back. We're happy to help.",,742.0
+744,AppleSupport,False,Tue Oct 31 22:06:27 +0000 2017,@115865 Hi there! What type of device are we working with?,740,745.0
+746,AppleSupport,False,Tue Oct 31 18:17:00 +0000 2017,@115865 We offer support via Twitter in English. Get help in Spanish here: https://t.co/IBIY3vMgPj or join https://t.co/OczyRx7IOs,745,747.0
+748,AppleSupport,False,Tue Oct 31 22:18:28 +0000 2017,@115866 We want to help! DM us and let us know more about the issues you are having. https://t.co/GDrqU22YpT,,749.0
+750,AppleSupport,False,Tue Oct 31 22:18:00 +0000 2017,@115867 We'd like to get you speaking to our experts here: https://t.co/IBIY3vMgPj,,751.0
+753,AppleSupport,False,Tue Oct 31 22:17:29 +0000 2017,"@115868 We've just released iOS 11.1. We suggest backing up &amp; updating. Then, test the issue again. Here's how: https://t.co/80YRnjDFDk",,754.0
+755,AppleSupport,False,Tue Oct 31 20:54:35 +0000 2017,@115868 Let us help with your Home button. Did this issue start right after iOS 11? Which version of iOS 11 are you running?,754,756.0
+757,AppleSupport,False,Tue Oct 31 22:16:31 +0000 2017,@115869 We're here to help. Meet us in DM and we can check on available options. https://t.co/GDrqU22YpT,,758.0
+759,AppleSupport,False,Tue Oct 31 22:15:28 +0000 2017,@115870 DM us the specific iOS version you are running currently and we'll continue there. https://t.co/GDrqU22YpT,,760.0
+761,AppleSupport,False,Tue Oct 31 22:01:31 +0000 2017,"@115870 Just to confirm, this is only happening with Spotify, correct?","760,762",763.0
+764,AppleSupport,False,Tue Oct 31 18:33:00 +0000 2017,@115870 Thanks for reaching out to us. Are you experiencing the missing app after restating your device?,763,765.0
+766,AppleSupport,False,Tue Oct 31 22:15:00 +0000 2017,@115871 We want to help you get your battery life back on track. Please DM and we'll look at it together. https://t.co/GDrqU22YpT,,767.0
+1754,AppleSupport,False,Tue Oct 31 22:41:00 +0000 2017,@116097 We'd like to look into this with you. Please DM us your current iOS version and your iPhone model. https://t.co/GDrqU22YpT,,1755.0
+1756,AppleSupport,False,Tue Oct 31 22:40:00 +0000 2017,@116098 Let's dig into this further with you. DM us and we'll continue there.,,1757.0
+1758,AppleSupport,False,Tue Oct 31 18:31:00 +0000 2017,"@116098 We definitely understand your concern. Please backup your iPhone, update and let us know the result: https://t.co/ahjigcvFRG",1757,1759.0
+1760,AppleSupport,False,Tue Oct 31 22:38:00 +0000 2017,@116099 We're here to help. Which exact iOS version is your device running? This info can be found under Settings &gt; General &gt; About.,,1761.0
+1762,AppleSupport,False,Tue Oct 31 22:36:00 +0000 2017,@116100 This article should help with that: https://t.co/usOJWy6ChP,1763,1764.0
+1765,AppleSupport,False,Tue Oct 31 22:52:00 +0000 2017,@116100 Try contacting our iTunes Store team here for more help: https://t.co/SDIe7UiyJN,1766,1763.0
+1767,AppleSupport,False,Tue Oct 31 22:35:30 +0000 2017,@116101 Thanks for clarifying. Let's meet in DM so we can do more in-depth on this. https://t.co/GDrqU22YpT,,1768.0
+1769,AppleSupport,False,Tue Oct 31 22:14:00 +0000 2017,@116101 We're happy to help. Has Home Sharing worked with these devices before?,1768,1770.0
+1771,AppleSupport,False,Tue Oct 31 22:35:00 +0000 2017,@116102 Which model do you have and is iOS 11.1 installed on it? Any steps tried so far?,1772,1773.0
+1774,AppleSupport,False,Tue Oct 31 23:03:01 +0000 2017,"@116102 To make sure, is iOS 11.1 showing here: Settings &gt; General &gt; About &gt; Version? Please DM us the answer here: https://t.co/GDrqU22YpT","1775,1776",1772.0
+1777,AppleSupport,False,Tue Oct 31 23:12:31 +0000 2017,"@116103 We'll make sure to get this straightened out. DM us, and we'll see you there. https://t.co/GDrqU22YpT",,1775.0
+1778,AppleSupport,False,Tue Oct 31 22:09:26 +0000 2017,@116102 We want you to be able to make calls on the iPhone. What exactly is going on with the Phone app?,1773,1779.0
+1780,AppleSupport,False,Tue Oct 31 22:32:25 +0000 2017,@116104 Let us look into that. What device and OS version are you using?,,1781.0
+1782,AppleSupport,False,Tue Oct 31 22:32:25 +0000 2017,@116105  We want to help.  Send us a DM letting us know if you are updated to iOS 11.1 https://t.co/GDrqU22YpT,,1783.0
+1784,AppleSupport,False,Tue Oct 31 22:31:00 +0000 2017,@116106 We offer support via Twitter in English. Contact us for help in your preferred language here: https://t.co/IBIY3vMgPj,,1785.0
+1786,AppleSupport,False,Tue Oct 31 22:30:01 +0000 2017,@116107 Glad to hear and just reach out again if you need help. Have a good one!,,1787.0
+1788,AppleSupport,False,Tue Oct 31 21:46:54 +0000 2017,@116107 Please keep us posted afterwards.,1787,1789.0
+1790,AppleSupport,False,Tue Oct 31 21:30:00 +0000 2017,@116107 Apps are important and we want you to get back to enjoying them. Which model do you have? Is iOS 11.1 installed on it?,1789,1791.0
+2609,AppleSupport,False,Tue Oct 31 22:58:00 +0000 2017,@116332 Let us know and we'll continue from there. https://t.co/GDrqU22YpT,,2610.0
+2611,AppleSupport,False,Tue Oct 31 22:49:27 +0000 2017,@116332 We'd like to see what we can do to assist. What version of iOS are you currently running? We released iOS 11.1 today.,"2610,2612",2613.0
+2614,AppleSupport,False,Tue Oct 31 22:57:34 +0000 2017,"@116334 Let’s work together on this situation. To clarify, did this start after updating to iOS 11.1? Also, which device are you using?",2615,2616.0
+2617,AppleSupport,False,Tue Oct 31 23:12:31 +0000 2017,@116334 Got it. Does this happen while using any particular App or feature? Let us know via a DM. We’ll keep moving forward from there. https://t.co/GDrqU22YpT,,2615.0
+2618,AppleSupport,False,Tue Oct 31 22:56:00 +0000 2017,@116335 You should still be able to control Music on your iPhone from the watch. Check out the user guide here: https://t.co/vRQnmrhVHj,2619,2620.0
+2621,AppleSupport,False,Tue Oct 31 23:21:50 +0000 2017,@116335 We certainly want to take a closer look into this issue. Select the following link to join us in a DM and we'll go from there. https://t.co/GDrqU22YpT,,2619.0
+2622,AppleSupport,False,Tue Oct 31 22:55:32 +0000 2017,@116336 Hi there! iOS 11.1 was released earlier today containing some bug fixes. Let's back up and update: https://t.co/80YRnjDFDk,2623,2624.0
+2626,AppleSupport,False,Tue Oct 31 22:54:53 +0000 2017,"@116337 We know how important your battery is &amp; we'll be happy to help. Which iOS version are you using? Also, when did this issue begin?",2627,2628.0
+2629,AppleSupport,False,Tue Oct 31 23:20:30 +0000 2017,@116337 Please meet with us in DM. We'd like to gather some additional details from you. https://t.co/GDrqU22YpT,,2627.0
+2630,AppleSupport,False,Tue Oct 31 22:54:00 +0000 2017,@116338 We're here to help out! Which device is this on and which version of iOS is currently installed?,2631,2632.0
+2633,AppleSupport,False,Tue Oct 31 23:46:00 +0000 2017,"@116338 Thank you very much! Send us a DM to let us know if your speaker doesn't work on calls, or if other apps are affected as well. https://t.co/GDrqU22YpT",,2631.0
+2634,AppleSupport,False,Tue Oct 31 22:53:28 +0000 2017,@116339 Check out this link: https://t.co/Lr8zUtw9ls Send us a DM if it doesn't help. https://t.co/GDrqU22YpT,,2635.0
+2636,AppleSupport,False,Tue Oct 31 22:53:28 +0000 2017,@116340 We can help. Let’s start with the following steps to see if we can save you a trip in for service: https://t.co/RqWW0duJ0U,2637,2638.0
+2639,AppleSupport,False,Tue Nov 07 18:19:00 +0000 2017,@116340 We certainly want to take a closer look into this. Select the following link to join us in a DM and we'll go from there. https://t.co/GDrqU22YpT,,2637.0
+2641,AppleSupport,False,Tue Oct 31 22:51:00 +0000 2017,@116341 Thanks for reaching out. DM which Bluetooth device you are trying to connect to so we can help. https://t.co/GDrqU22YpT,,2642.0
+2643,AppleSupport,False,Tue Oct 31 22:51:00 +0000 2017,@116342 We'd like to help. What is going on with the app?,2644,2645.0
+2646,AppleSupport,False,Wed Nov 01 13:30:29 +0000 2017,@116342 We'd like to take a closer look at this. DM us and we'll go from there. https://t.co/GDrqU22YpT,,2644.0
+2647,AppleSupport,False,Tue Oct 31 22:50:38 +0000 2017,"@116343 Hey, we can provide some guidance. Let's meet in DM and we'll go from there. https://t.co/GDrqU22YpT",,2648.0
+2649,AppleSupport,False,Tue Oct 31 22:50:38 +0000 2017,@116344 We're here to help with any issues you may having with performance. Let us know the exact iOS version to get started.,,2650.0
+2651,AppleSupport,False,Tue Oct 31 22:49:39 +0000 2017,@116345 Got it. We'd recommend backing up and updating your device to 11.1 and test things out further. Keep us posted on the results.,,2652.0
+2653,AppleSupport,False,Tue Oct 31 21:19:30 +0000 2017,"@116345 Since we just released iOS 11.1 today, can you clarify which exact version you have installed?",2652,2654.0
+2655,AppleSupport,False,Tue Oct 31 20:18:00 +0000 2017,"@116345 We'll be happy to look into this with you. To clarify, which iPhone model do you have and what's the exact iOS version?",2654,2656.0
+2658,AppleSupport,False,Tue Oct 31 22:49:00 +0000 2017,@116346 We want to help with this. Let's start troubleshooting by trying the steps here: https://t.co/5KootZbxj1,,2659.0
+2661,AppleSupport,False,Tue Oct 31 22:49:00 +0000 2017,@116347 We'd be glad to see what we can do for you. Let's meet up in DM first. Thanks! https://t.co/GDrqU22YpT,,2662.0
+2664,AppleSupport,False,Tue Oct 31 22:48:31 +0000 2017,@116348 We'd like to look into this with you. Does the song appear to be greyed out?,2665,2666.0
+2667,AppleSupport,False,Tue Oct 31 23:10:58 +0000 2017,@116348 Thank you for reaching out. We've received your DM and will continue working with you there.,,2665.0
+2669,AppleSupport,False,Tue Oct 31 22:46:26 +0000 2017,@116349 Send us a DM please and we will go from there. https://t.co/GDrqU22YpT,2670,2671.0
+2675,AppleSupport,False,Tue Oct 31 22:07:39 +0000 2017,@116349 We're happy to help. What seems to be the problem?,2674,2676.0
+2677,AppleSupport,False,Tue Oct 31 22:45:26 +0000 2017,"@116350 We're here for you. DM us, and we'll look into this together. https://t.co/GDrqU22YpT",,2678.0
+2679,AppleSupport,False,Tue Oct 31 22:45:26 +0000 2017,@116351 We're glad to hear that's sorted out for you. Have a great day.,,2680.0
+2681,AppleSupport,False,Fri Oct 20 14:00:13 +0000 2017,"@116351 We'd love to help with your alarm volume. Is the option to ""Change with Buttons"" disabled under Settings &gt; Sounds?",2680,2682.0
+2683,AppleSupport,False,Tue Oct 31 22:45:25 +0000 2017,"@116352 Hey, we can work together to figure out a solution. Send us a DM and we'll continue from there. https://t.co/GDrqU22YpT",,2684.0
+3760,AppleSupport,False,Tue Oct 31 23:11:32 +0000 2017,@116620 We're here to help. Send us a DM with the issue and we'll follow up from there. https://t.co/GDrqU22YpT,,3761.0
+3762,AppleSupport,False,Tue Oct 31 23:10:58 +0000 2017,@116621 Let's look at this together. Are you updated to iOS 11.1?,3763,3764.0
+3765,AppleSupport,False,Tue Oct 31 23:20:00 +0000 2017,"@116621 It was released earlier today. Let's use these steps to update iOS:  
+ https://t.co/80YRnjDFDk",,3763.0
+3766,AppleSupport,False,Tue Oct 31 23:09:27 +0000 2017,"@116622 We understand your concerns, and want to help. Which device is this happening on?",,3767.0
+3768,AppleSupport,False,Tue Oct 31 23:09:27 +0000 2017,@116623 Thank you for reaching out to us. Have you tried to restart the device? Let us know to get started.,3769,3770.0
+3771,AppleSupport,False,Tue Oct 31 23:47:00 +0000 2017,@116623 That's great! Enjoy the rest of your day.,,3769.0
+3772,AppleSupport,False,Tue Oct 31 23:07:50 +0000 2017,@116624 We'd like to take a look into that with you. Would you please join us in DM to get started? https://t.co/GDrqU22YpT,,3773.0
+3775,AppleSupport,False,Tue Oct 31 23:00:52 +0000 2017,@116625 Let’s team up on this. How long has this been happening? What version number of iOS are you running? Which iPhone do you have?,3776,3777.0
+3778,AppleSupport,False,Wed Nov 01 20:47:00 +0000 2017,@116625 Thanks for the update. Go ahead and send us a DM and we'll take it from there. https://t.co/GDrqU22YpT,,3776.0
+4869,AppleSupport,False,Tue Oct 31 23:27:30 +0000 2017,@116853 We want to help! What model of iOS device are you using? Do you have the most recent version of iOS 11.1 downloaded?,4870,4871.0
+4872,AppleSupport,False,Wed Nov 01 12:37:25 +0000 2017,"@116853 Thanks for letting us know. We'd like to take a further look into this. Please send us a DM, and we'll continue there. https://t.co/GDrqU22YpT",,4870.0
+4873,AppleSupport,False,Tue Oct 31 23:27:00 +0000 2017,@116854 Let's investigate this together. Does this only occur when using specific apps or website?,4874,4875.0
+4876,AppleSupport,False,Tue Oct 31 23:24:52 +0000 2017,@116855 We're glad to hear that resolved the issue. Don't hesitate to reach out to us if you have any questions. Take care.,,4877.0
+4878,AppleSupport,False,Tue Oct 31 21:41:00 +0000 2017,@116855 We want to help. Does restarting help at all? DM us which iOS version you're on and we'll continue support there. https://t.co/GDrqU22YpT,4877,4879.0
+4880,AppleSupport,False,Tue Oct 31 23:24:52 +0000 2017,@116856 We're here for you. What is the exact version of the iOS you're running? Check by tapping Settings &gt; General &gt; About.,4881,4882.0
+4883,AppleSupport,False,Tue Oct 31 23:37:00 +0000 2017,@116856 Are all of your apps updated as well?,"4884,4885",4881.0
+4886,AppleSupport,False,Tue Oct 31 23:55:00 +0000 2017,@116856 We'd be happy to look into this with you further. DM us using the link below and we'll go from there. https://t.co/GDrqU22YpT,,4884.0
+4887,AppleSupport,False,Tue Oct 31 23:23:32 +0000 2017,@116857 We know how important it is to be able to view your photos. Are you able to see older photos on your iPhone?,"4888,4889",4890.0
+4891,AppleSupport,False,Wed Nov 01 13:28:00 +0000 2017,"@116857 We appreciate those details. For more help with Photos, please reach out to our Photos experts here: https://t.co/IBIY3vMgPj",,4889.0
+4892,AppleSupport,False,Tue Oct 31 23:23:00 +0000 2017,@116858 We're here to help. Send us a DM with the iOS version number you're on. We'll follow up there. https://t.co/GDrqU22YpT,,4893.0

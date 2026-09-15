@@ -1,0 +1,11 @@
+intent,matched_messages,percentage
+delivery_delay,6500,12.56208569275071
+prime_subscription,3602,6.961328102352009
+refund_problem,2123,4.1029704501091935
+account_problem,1606,3.103801480393483
+return_problem,1349,2.607115938387801
+amazon_device,1034,1.9983379394314205
+payment_problem,832,1.6079469686720909
+tracking_problem,737,1.424347254701119
+wrong_or_damaged_product,565,1.091935140985254
+amazon_video,377,0.7286009701795412

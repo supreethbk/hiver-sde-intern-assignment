@@ -1,0 +1,226 @@
+example_id,customer_message,actual_intent,predicted_intent,correct
+1,@AmazonHelp how can you refund back to an account that doesn't exist?!,REFUND,REFUND,True
+2,"@AmazonHelp Current status is On the Way, last location was last night @ 9:16pm at Royal Mail’s National Distribution Centre  : - https://t.co/YY2XiWaC6V",DELIVERY_DELAY,DELIVERY_TRACKING,False
+3,@AmazonHelp The package was left at the house next door that is unoccupied. The driver gave it to a contractor working at the house. Had the seller not returned today who knows when i would have received it. That is unacceptable in my opinion and as a Prime member even more so.,DELIVERY_PROBLEM,PACKAGE_NOT_RECEIVED,False
+4,"@AmazonHelp Ben oui...plusieurs fois 
+Sans résultats",PACKAGE_NOT_RECEIVED,INSUFFICIENT_CONTEXT,False
+5,@AmazonHelp I've called customer service several times and tried to change the delivery instructions but they won't deliver if I don't answer the door,DELIVERY_INSTRUCTIONS,DELIVERY_INSTRUCTIONS,True
+6,@AmazonHelp Yes I have? Nobody left a card or anything. There wasn’t anyone home and you’ve put the status as “delivered to resident” ?? Where is my order?,PACKAGE_NOT_RECEIVED,DELIVERY_TRACKING,False
+7,@AmazonHelp Contacted... They have been giving false assurances and unhelpful,CUSTOMER_SERVICE,CUSTOMER_SERVICE,True
+8,@AmazonHelp Ye the 24 of Dec with a 3-4 days shipping ... No problems 😁,DELIVERY_TRACKING,DELIVERY_TRACKING,True
+9,@AmazonHelp USPS,DELIVERY_TRACKING,DELIVERY_NOT_RECEIVED,False
+10,"@AmazonHelp Spoke to customer services who told me it would be here by 9pm. It's now passed 9pm and still no sign. 2 days overdue now. Wtf are you playing at Amazon, yet again? Where can I put an official complaint in?",DELIVERY_DELAY,DELIVERY_DELAY,True
+11,"@AmazonHelp It's out for delivery as of 12:03, the carrier is you guys. I work from home and need lunch but I'd rather not miss the package. 
+
+I'll risk it.",DELIVERY_TRACKING,DELIVERY_TRACKING,True
+12,@AmazonHelp Thank you.,RESOLUTION_CONFIRMATION,INSUFFICIENT_CONTEXT,False
+13,@AmazonHelp When it’s suppose to get here this week and I need it this week the money is already gone and idk if my order is coming or not,DELIVERY_DELAY,ORDER_DISPATCH,False
+14,"@AmazonHelp Alors je dois pas être doué, mais je clique où pour faire une réclamation sur l'article en question ? https://t.co/nYF5QD3Fxe",CUSTOMER_SERVICE,RESOLUTION_CONFIRMATION,False
+15,"@AmazonHelp merci beaucoup, appel passé, problème résolu, merci de votre patience !",RESOLUTION_CONFIRMATION,RESOLUTION_CONFIRMATION,True
+16,@AmazonHelp Bastards..   Why you cancel order after taking money from customers!!  Using customers money without interest..  Shameful,ORDER_CANCELLATION,PAYMENT,False
+17,@AmazonHelp Issue is resolved and item is being redelivered,PACKAGE_NOT_RECEIVED,RESOLUTION_CONFIRMATION,False
+18,@AmazonHelp My account is on the NL site.,ACCOUNT,ACCOUNT,True
+19,"@AmazonHelp es vendido por un externo de amazon, pero es enviado por ustedes.
+de igual forma el producto decia que estaba en stock, y se supone que ya lo hayan enviado.. Porfavor ayudarme, he tenido el mismo problema con ustedes siempre, nunca envian los productos a la fecha prometida.",ORDER_DISPATCH,SELLER,False
+20,"@AmazonHelp No, ordered yesterday (10/26), expected shipping date is November 7th, it’s in stock, so that kinda defeats the purpose of prime shipping",DELIVERY_DELAY,ORDER_DISPATCH,False
+21,@AmazonHelp Did that. Got same response and I'm asked to follow the same steps which I have been doing since 21st September. That's ridiculous!,CUSTOMER_SERVICE,ORDER_DISPATCH,False
+22,@AmazonHelp Surely will do. If you just send over a #firestick 😂,DEVICE,DEVICE,True
+23,@AmazonHelp It was from .co.uk thank you,RETURN,WEBSITE_OR_APP,False
+24,@AmazonHelp OUI. Via lappli Amazon mobile... Ca va durer longtemps le jeu de se renvoyer la balle la ?,CUSTOMER_SERVICE,PRODUCT_INFORMATION,False
+25,@AmazonHelp 35 minutes and still waiting. That's not good customer service is it?  Being lied to and then lied to again....,CUSTOMER_SERVICE,CUSTOMER_SERVICE,True
+26,@AmazonHelp No delays. It just didn't ship until today. I ordered it on 10/4 and it was supposed to be here today.,ORDER_DISPATCH,ORDER_DISPATCH,True
+27,@AmazonHelp iOS. It worked a couple of weeks ago.,DEVICE,ORDER_DISPATCH,False
+28,@AmazonHelp Vizio smart TV - there is an app but quality and crash rate are terrible. Functions also do not work with other remotes as most apps do,DEVICE,PRODUCT_INFORMATION,False
+29,"@AmazonHelp Sorry, we live 200 miles apart and she is a 74 year old lady who is very upset by this.  Please can I speak to someone on the phone?",CUSTOMER_SERVICE,CUSTOMER_SERVICE,True
+30,"@AmazonHelp Si quito mis suscripción ahora, una vez hecho el pedido y a la espera de recibirlo, se aplica algún plus a mi pedido?gracias",OTHER,ORDER_CANCELLATION,False
+31,@AmazonHelp Y can't you access my details while you can access my messages here?,ACCOUNT,ACCOUNT,True
+32,@AmazonHelp Your response only says we will reach out to you.,CUSTOMER_SERVICE,RESOLUTION_CONFIRMATION,False
+33,"@AmazonHelp O status é em processamento. Eu achei estranho pois não pediu o meu código de verificação do meu cartão de crédito, apenas digitei o número do meu cartão e concluí o pedido. Por isso estou confuso se vai ser ou não debitado.",PAYMENT,PAYMENT,True
+34,@AmazonHelp @115821 @AmazonHelp @115850 customer care executives are behaving like Dons .. insisting me for refund ...pls reply,CUSTOMER_SERVICE,REFUND,False
+35,@AmazonHelp You guys keep messing up my orders and driving me crazy.,OTHER,ORDER_DISPATCH,False
+36,@AmazonHelp Yes. Thank you. It will arrive tomorrow. Unfortunately too late for a trip I'm taking. Caught up in the Black Friday madness over the weekend I guess 🤔,DELIVERY_DELAY,DELIVERY_TRACKING,False
+37,@AmazonHelp It says the 2nd of December....2 days an still not dispatched yet it's been 5 days it didn't take this long when I ordered it off the American site,ORDER_DISPATCH,ORDER_DISPATCH,True
+38,@AmazonHelp Spoke to yr CS team who helped as much as poss although cld not change my Xbox OneX delivery address!  Still feel angry at being lied to tho,DELIVERY_INSTRUCTIONS,SELLER,False
+39,@AmazonHelp After dealing w/this an hour I was hung up on by Mike. He refused to transfer me to someone in the US &amp; told me no one else will talk to me.,CUSTOMER_SERVICE,CUSTOMER_SERVICE,True
+40,"@AmazonHelp ok, so I purchased a motinor which is defective and you guys considering it to be replaced rather than retrun which in turn I agree to order from amazon again buy not the same brand as box piece is defective, I want different brand option. Can you help me with this issue.",OTHER,ORDER_CANCELLATION,False
+41,@AmazonHelp I had dropped email pl check it,CUSTOMER_SERVICE,ORDER_CANCELLATION,False
+42,@AmazonHelp Pues dice vendido por InLife MX,SELLER,PRODUCT_INFORMATION,False
+43,@AmazonHelp No according to my app it's still out for today. No explanation of a delay either. Why is it now 2 days late??,DELIVERY_DELAY,DELIVERY_DELAY,True
+44,"@AmazonHelp Yes they were, I have private messaged you. You did this to a Harry Potter book. Be ashamed.",CUSTOMER_SERVICE,CASUAL_ENGAGEMENT,False
+45,@AmazonHelp Tomorrow. But that isn't the issue. Why would my package even leave IL if it's being shipped to an IL address?,DELIVERY_PROBLEM,DELIVERY_PROBLEM,True
+46,@AmazonHelp I already replied,CUSTOMER_SERVICE,RESOLUTION_CONFIRMATION,False
+47,@AmazonHelp I sent this in yesterday on your site. Haven't heard anything yet. But I got 8 more emails from sellers this morning.,CUSTOMER_SERVICE,ORDER_DISPATCH,False
+48,@AmazonHelp It's very troubling you need me to go out of my way to write to you and tell you that he packaging can be improved upon. Is there not an evaluation team capable of identifying that?,OTHER,PRODUCT_INFORMATION,False
+49,@AmazonHelp Still order not receive. it should deliver on 16 oct today is 18 oct. I call customer care they do not have any reason why it was delay,DELIVERY_DELAY,DELIVERY_DELAY,True
+50,@AmazonHelp And note that's luggage. Luggage that was going to be used on Monday AM.,DELIVERY_DELAY,ORDER_DISPATCH,False
+51,@AmazonHelp Il c’est perdu ou pas ? https://t.co/Z50YYKFA1W,PACKAGE_NOT_RECEIVED,PACKAGE_NOT_RECEIVED,True
+52,@AmazonHelp Clicked on link and it says can't find @146898 !!!!!  Hope that's not the case tomorrow,WEBSITE_OR_APP,PACKAGE_NOT_RECEIVED,False
+53,"@AmazonHelp Sony Bravia 4K, Baujahr ende 2016",DEVICE,PRODUCT_INFORMATION,False
+54,@AmazonHelp There is no mail which I got from you today,OTHER,WEBSITE_OR_APP,False
+55,"@AmazonHelp jedes mal....
+und auch nächstes mal 
+
+Der Bote will einfach nicht 
+
+wohne ja auch oberhalb der 10 Etage 
+
+da hat er bestimmt Höhenangst....",DELIVERY_PROBLEM,DELIVERY_PROBLEM,True
+56,@AmazonHelp Yes it’s enabled,ACCOUNT,ACCOUNT,True
+57,@AmazonHelp Livraison estimé le 16 oct,DELIVERY_TRACKING,DELIVERY_DELAY,False
+58,@AmazonHelp Continuosly getting same revert its more than a 1.5 month when i get my money back u told me on 8th of last mnth returning in 2-4 hours https://t.co/fD7GCOLmti,REFUND,PAYMENT,False
+59,"@AmazonHelp Normalement aujourd'hui, normalement.... mais je prends ce colis en exemple, Colisprive n'est pas un bon livreur, très souvent en retard",DELIVERY_DELAY,DELIVERY_DELAY,True
+60,@AmazonHelp they tried to deliver today but thats the same problem I had for two weeks that they only try to redeliver instead of bringing it to a post office or whatever because I'm not home before 5,DELIVERY_INSTRUCTIONS,DELIVERY_PROBLEM,False
+61,@AmazonHelp Thanks. I hv reported and discussed with CC exec. He promised me to resolve issue in next 2 hrs. Let’s see,CUSTOMER_SERVICE,RESOLUTION_CONFIRMATION,False
+62,"@AmazonHelp Can't u access through order I'd ....??
+Just looping around same point .
+#lostfaith @115851",ACCOUNT,ACCOUNT,True
+63,@AmazonHelp Courier is going to be contacted and I've been told to allow 24 hours for a response which I will do because this is a christmas gift that cost a lot of money so I just want to know where it is!,PACKAGE_NOT_RECEIVED,DELIVERY_TRACKING,False
+64,"@AmazonHelp that's just it, I can't get a tracking number from your website.",DELIVERY_TRACKING,DELIVERY_TRACKING,True
+65,"@AmazonHelp Je l'ai signalé au service client de twitch ici https://t.co/hdO6UWZn1X.
+Dois-je le signaler également au votre ?",CUSTOMER_SERVICE,CUSTOMER_SERVICE,True
+66,"@AmazonHelp It never was given, not that I remember. I pre-ordered them, so I expected them to arrive closer to the release dates. But now it's been weeks since their release and still no dispatch.",ORDER_DISPATCH,ORDER_DISPATCH,True
+67,@AmazonHelp ah. C’est embarrassant! Et que se passe-t-il si le livreur débarque &amp; qu’il n’y a personne pr réceptionner ? (Je serai au ministère à Bercy),DELIVERY_INSTRUCTIONS,DELIVERY_PROBLEM,False
+68,"@AmazonHelp Not sure which carrier it is, but last time I ordered a Christmas present a couple of years ago, (a kindle fire) my account got hacked and my wife was left with a kindle she couldn’t use, after I had to get yet another replacement.",ACCOUNT,ACCOUNT,True
+69,"@AmazonHelp It wasn’t explained to me , 2-3 different reasons are being given to me.",OTHER,RESOLUTION_CONFIRMATION,False
+70,@AmazonHelp But why aren't phones working?,DEVICE,DEVICE,True
+71,"@AmazonHelp I've contacted you guys about it multiple times this year. Roughly 10-12 times this year, I've been on the phone with you guys for this, and it keeps happening. Why am I paying $100 for prime 2 day shipping, if it's only actually shipped 2 days occasionally. It's infuriating.",DELIVERY_PROBLEM,ORDER_DISPATCH,False
+72,@AmazonHelp NEIN! 👎🏻,INSUFFICIENT_CONTEXT,WEBSITE_OR_APP,False
+73,@AmazonHelp Yes. Nothing helped. Next plz,PACKAGE_NOT_RECEIVED,RESOLUTION_CONFIRMATION,False
+74,@AmazonHelp Es geht aber um Melia Pro Rewards?,INSUFFICIENT_CONTEXT,PRODUCT_INFORMATION,False
+75,"@AmazonHelp L'écran ne se déverrouille pas lorsque que je le touche, du coup, je ne peux pas accéder à mon colis.",DEVICE,DEVICE,True
+76,@AmazonHelp Kindly share contact no as the website is not helping to relate my issue,CUSTOMER_SERVICE,WEBSITE_OR_APP,False
+77,"@AmazonHelp Nenhuma... comprei em pré-venda e no e-mail de confirmação fala que eu receberia uma nova mensagem com a data de esntrega, mas não recebi 😢",DELIVERY_TRACKING,ORDER_DISPATCH,False
+78,@AmazonHelp 7 de noviembre,DELIVERY_TRACKING,PACKAGE_NOT_RECEIVED,False
+79,@AmazonHelp *n'ai rien dit la a force ..... j'en ai marre de payer pour rien 😔,PAYMENT,PAYMENT,True
+80,@AmazonHelp Hi there! Yes raised it as delivery feedback  with each delivery and not had anything backand yes my safe place is at the back of the house which is accessible. Quite disappointing as if it then goes missing who take responsibility?,DELIVERY_INSTRUCTIONS,PACKAGE_NOT_RECEIVED,False
+81,@AmazonHelp @115821 Well I left bad feedback and amazon Rep called me 6 times in 4 minutes after 3AM including one call after I said I was sleeping,CUSTOMER_SERVICE,RESOLUTION_CONFIRMATION,False
+82,@AmazonHelp Already talk to CS GUY he hang up on me,CUSTOMER_SERVICE,CUSTOMER_SERVICE,True
+83,@AmazonHelp It was marked as delivered at 12.27 yesterday afternoon.I have phoned your customer service twice and I'm always told the same thing.That it's been marked as delivered and they will investigate.But this is happening time and time again.,PACKAGE_NOT_RECEIVED,DELIVERY_DELAY,False
+84,"@AmazonHelp No, no other options were offered, both members of staff were very unhelpful",CUSTOMER_SERVICE,CUSTOMER_SERVICE,True
+85,@AmazonHelp Carrier as it was dispatched yesterday. https://t.co/B6iSP0gad2,DELIVERY_DELAY,ORDER_DISPATCH,False
+86,@AmazonHelp I can’t see anywhere on the order where it allows me 2 make a claim! There’s nothing in there about claiming at all!,OTHER,ORDER_CANCELLATION,False
+87,"@AmazonHelp By Amazon, says it is in Wigan at a parcel depot and there is a problem but it should have bn here on Oct 3rd",DELIVERY_DELAY,DELIVERY_DELAY,True
+88,"@AmazonHelp Je vais faire ça, merci",RESOLUTION_CONFIRMATION,RESOLUTION_CONFIRMATION,True
+89,@AmazonHelp Nothing helpful - this needs escalating to your security team now.,ACCOUNT,ACCOUNT,True
+90,@AmazonHelp @115821 how long do you think it will take?,CUSTOMER_SERVICE,DELIVERY_TRACKING,False
+91,@AmazonHelp Is it coming today as per promise? Today is last estimated date.,DELIVERY_TRACKING,DELIVERY_TRACKING,True
+92,@AmazonHelp No,INSUFFICIENT_CONTEXT,INSUFFICIENT_CONTEXT,True
+93,"@AmazonHelp No no, I mean is there a way I can add stuff to my girlfriend's account without being on her account.",ACCOUNT,SELLER,False
+94,@AmazonHelp Kindly tell me how 2400 pupkart MRP become 4600 rs on your site,OTHER,PRODUCT_INFORMATION,False
+95,@AmazonHelp .uk,INSUFFICIENT_CONTEXT,WEBSITE_OR_APP,False
+96,@AmazonHelp It doesn’t state a courier.. https://t.co/Qq79zAQlqY,DELIVERY_TRACKING,DELIVERY_TRACKING,True
+97,@AmazonHelp No nothing at all,INSUFFICIENT_CONTEXT,INSUFFICIENT_CONTEXT,True
+98,"@AmazonHelp No, but I will now. Thanks.",RESOLUTION_CONFIRMATION,RESOLUTION_CONFIRMATION,True
+99,"@AmazonHelp お忙しいなかご丁寧にありがとうございます。
+かしこまりました。
+当方は騙される事なく無事でしたが本日の件は家族に話をして、連絡しないように伝えておきます。",RESOLUTION_CONFIRMATION,RESOLUTION_CONFIRMATION,True
+100,@AmazonHelp 11 Nov 2017,DEVICE,DELIVERY_TRACKING,False
+101,@AmazonHelp Yes - not once but many times. Not worth the $100/yr if you don’t honor! Had to have today. Now scheduled for Monday 5 day after ordering !,DELIVERY_PROBLEM,ORDER_DISPATCH,False
+102,@AmazonHelp Order number is 407-0590121-7161968,INSUFFICIENT_CONTEXT,ORDER_DISPATCH,False
+103,@AmazonHelp Yesterday. Does that mean I will not be getting my camera because you guys are out of stock now?,ORDER_DISPATCH,PRODUCT_INFORMATION,False
+104,"@AmazonHelp I've just given my phone No. For you guys to contact me , Anyways I have proceeded my order with Flipkart ...",CUSTOMER_SERVICE,ORDER_CANCELLATION,False
+105,@AmazonHelp It's saying Amazon carrier and it says they tried to deliver the package but they didn't because I have just checked with reception. Said they will try tomorrow but I need it today.,DELIVERY_DELAY,DELIVERY_DELAY,True
+106,"@AmazonHelp As I mentioned, none of my colleagues have record of these purchases so I can't get that information. The credit card is in my name which will be on every order. Do you have any other solutions?",ACCOUNT,PAYMENT,False
+107,@AmazonHelp どうにかできました！ありがとうございました(๑･̑◡･̑๑),RESOLUTION_CONFIRMATION,RESOLUTION_CONFIRMATION,True
+108,"@AmazonHelp Ur delivery dept has rescheduled the delivery &amp; disgustingly mentioned ""as per customer request""
+Its too poor practice Mr @115851",DELIVERY_PROBLEM,DELIVERY_TRACKING,False
+109,@AmazonHelp Essa é a parte difícil: escolher haha,CASUAL_ENGAGEMENT,CASUAL_ENGAGEMENT,True
+110,@AmazonHelp ok..so should i contact customer care on a daily basis or wait till eternity to get this resolved.,CUSTOMER_SERVICE,CUSTOMER_SERVICE,True
+111,@AmazonHelp You should definitely make it available people..like really,FEEDBACK,CASUAL_ENGAGEMENT,False
+112,"@AmazonHelp So why do you have a twitter if it just asks us to email you? My order is unfulfilled, this is a complaint. Why must i email you?",ORDER_DISPATCH,ORDER_DISPATCH,True
+113,@AmazonHelp I have a complaint against your seller then!,SELLER,SELLER,True
+114,"@AmazonHelp I ordered some stuff,and it offered me prime shipping which I gladly accepted it.I check my bank statement today and they charge me almost $12.so I called and they say because I use the free one months ago,but when I was checking out it never told me I was ineligible for it",PAYMENT,PAYMENT,True
+115,"@AmazonHelp え、、、アマゾンのカスタマーサービスさん⁇😅
+ノリがいいなぁ。ひょっとして関西人とか⁉️",CASUAL_ENGAGEMENT,CASUAL_ENGAGEMENT,True
+116,@AmazonHelp I was promised a replacement before tomorrow early morning.Bt I don't see any updates on that. https://t.co/fBwzdFFCGb,OTHER,ORDER_CANCELLATION,False
+117,@AmazonHelp I have to return only... No other option i have... Now you have to give me the same product in same price...,RETURN,RETURN,True
+118,"@AmazonHelp form filled no reply yet
+such an unstrustworthy service by amazon 3 days delayed from expected delivery date",DELIVERY_DELAY,DELIVERY_DELAY,True
+119,@AmazonHelp no veo q nada raro.Es 1 envío dentro d la península.Al menos he conseguido guardar la dirección.A ver si la próxima vez lo logro,DELIVERY_INSTRUCTIONS,ORDER_DISPATCH,False
+120,"@AmazonHelp Correct. I set the Sonos skill up with my speaker and my Spotify account, but it only plays out of the echo.",DEVICE,DEVICE,True
+121,@AmazonHelp When?  In coming new year? Busy looting other innocent customers or what? @115851 @12934 @1840,CUSTOMER_SERVICE,CUSTOMER_SERVICE,True
+122,@AmazonHelp I have to login to view the page.,WEBSITE_OR_APP,ACCOUNT,False
+123,"@AmazonHelp I've already reached out three times, spoke with Amazon logistics, and was told there is nothing they can do other than redeliver tmrw",DELIVERY_PROBLEM,DELIVERY_DELAY,False
+124,@AmazonHelp November 7th. It’s said “Out for delivery” and “Arriving today by 8pm” every day since the 7th.,DELIVERY_PROBLEM,DELIVERY_TRACKING,False
+125,"@AmazonHelp It says expected yesterday, another says already delivered. I have none of these items.",PACKAGE_NOT_RECEIVED,INSUFFICIENT_CONTEXT,False
+126,@AmazonHelp Then surely it should have been updated on my acc and not asked for a review.,FEEDBACK,ACCOUNT,False
+127,"@AmazonHelp Link provided is for buyers, we are seller on Amazon.in",SELLER,SELLER,True
+128,"@AmazonHelp ""Alexa, What's the weather like"" 
+""Currently in Kozhikode, Kansas, it is..."" for fuck's sake, I live in Kozhikode but Kozhikode is NOT in Kansas. Is Alexa actually intelligent? You tell me @115850. She's your kid.",DEVICE,PRODUCT_INFORMATION,False
+129,@AmazonHelp Is there a way to find out if my package has been lost? There hasn’t been an update on it since early Sunday.,PACKAGE_NOT_RECEIVED,PACKAGE_NOT_RECEIVED,True
+130,"@AmazonHelp Guideline says I should not be directly or indirectly associated with product as in biased comment, which am satisfying. Then why not allow?",FEEDBACK,RESOLUTION_CONFIRMATION,False
+131,@AmazonHelp D'accord merci,RESOLUTION_CONFIRMATION,INSUFFICIENT_CONTEXT,False
+132,"@AmazonHelp It SAID same day, but then it said it would send me confirmation, and when I got the confirmation it said Nov 5th.",DELIVERY_TRACKING,DELIVERY_TRACKING,True
+133,@AmazonHelp Thanks!,RESOLUTION_CONFIRMATION,WEBSITE_OR_APP,False
+134,@AmazonHelp Why am I not surprised this still is unresolved,CUSTOMER_SERVICE,RESOLUTION_CONFIRMATION,False
+135,@AmazonHelp Enough of this nuisance!! Its been 8 months since my money is not refunded and even now i just got an email on 30th oct syaing the matter,REFUND,REFUND,True
+136,@AmazonHelp Expédié par un vendeur tiers je crois,SELLER,SELLER,True
+137,"@AmazonHelp Video stutters, no audio and video freezing. Pause for a couple sec &amp; fine for another 20m. I'm on gig internet hardwired tv.",DEVICE,DEVICE,True
+138,@AmazonHelp Yes.,INSUFFICIENT_CONTEXT,RESOLUTION_CONFIRMATION,False
+139,"@AmazonHelp Yes Sir,I reported,they assured me too 4 d return &amp;said pickup agent vl contact U but nothing done.",RETURN,RETURN,True
+140,@AmazonHelp Yup 😢 I cancelled the order now,ORDER_CANCELLATION,ORDER_CANCELLATION,True
+141,@AmazonHelp I still have not received my codes. Pre ordered back in April.,OTHER,PACKAGE_NOT_RECEIVED,False
+142,@AmazonHelp J'ai reçu ce mail ce matin malgré avoir annoncé que j'avais bien reçu la commande. 😬À qui dois-je répondre ? https://t.co/RS1HNVHdDE,OTHER,ORDER_CANCELLATION,False
+143,@AmazonHelp Werde ich mal machen... Danke,RESOLUTION_CONFIRMATION,CASUAL_ENGAGEMENT,False
+144,@AmazonHelp We still have not heard back yet from you regarding this fraud case. An amazon vendor is using our name and address and we are receiving multiple amazon return items to our home. This needs to stop immediately. @115821 @115851,ACCOUNT,SELLER,False
+145,"@AmazonHelp Sirji , i have already did that , but even tortoise can walk faster than the resolution process of Amzon , check my history via my number @109028, no need to delete this tweet ..",CUSTOMER_SERVICE,RESOLUTION_CONFIRMATION,False
+146,@AmazonHelp Non c'était pas prévu il me semble. Comme elle est USB c je me suis dit qu'ils mettraient directement le câble plutôt qu'un usb normal,PRODUCT_INFORMATION,DEVICE,False
+147,@AmazonHelp Ok thank you,RESOLUTION_CONFIRMATION,CASUAL_ENGAGEMENT,False
+148,"@AmazonHelp I just gave you the tracking number. Go to your data base, not Twitter, and hunt the damn thing down. I pay Prime. I expect Prime service",DELIVERY_PROBLEM,DELIVERY_TRACKING,False
+149,@AmazonHelp Just re-ordered with another email address and now that account has been immediately locked,ACCOUNT,ACCOUNT,True
+150,@AmazonHelp Please share the escalation matrix.,CUSTOMER_SERVICE,INSUFFICIENT_CONTEXT,False
+151,@AmazonHelp I have already sent a mail yesterday at 9pm &amp; called customer care but no response as of now. Marked mail to Jeff also.#fraud,ACCOUNT,ORDER_CANCELLATION,False
+152,@AmazonHelp Merci,RESOLUTION_CONFIRMATION,INSUFFICIENT_CONTEXT,False
+153,@AmazonHelp Nope! 18-20th. Not acceptable,DELIVERY_TRACKING,DELIVERY_DELAY,False
+154,@AmazonHelp Still waiting,CUSTOMER_SERVICE,DELIVERY_DELAY,False
+155,@AmazonHelp The delivery date was supposed to be today,DELIVERY_DELAY,DELIVERY_DELAY,True
+156,@AmazonHelp i dont have any fax service in my town and u ppl r crazy,ACCOUNT,SELLER,False
+157,"@AmazonHelp #unprofessional order id # 
+403-7503264-7181114,403-8300003-6354735,403-5491238-8117144",CUSTOMER_SERVICE,ORDER_DISPATCH,False
+158,@AmazonHelp Yes iv done everything iv just sent you a full message now ..,PACKAGE_NOT_RECEIVED,INSUFFICIENT_CONTEXT,False
+159,"@AmazonHelp わかりますが、同じ表品を2セットで別はやっぱり嫌です…
+開けると「入るやん」って思ってしまいますし…
+でも、わざわざありがとうございます😊",FEEDBACK,PRODUCT_INFORMATION,False
+160,@AmazonHelp It's on Amazon.in but transaction has been made on .uk,PAYMENT,ORDER_CANCELLATION,False
+161,@AmazonHelp Why false assurances then,CUSTOMER_SERVICE,INSUFFICIENT_CONTEXT,False
+162,@AmazonHelp Call me option is not working. PL call back,CUSTOMER_SERVICE,CUSTOMER_SERVICE,True
+163,"@AmazonHelp There's nothing written but the title of the book, but i did pay the price listed for the hardcover book",PRODUCT_INFORMATION,PAYMENT,False
+164,"@AmazonHelp Done
+Let's see how responsive Amazon.in is",CUSTOMER_SERVICE,CASUAL_ENGAGEMENT,False
+165,@AmazonHelp I have no contact information. They did not leave a card. I have tweeted them and they have not responded.,DELIVERY_PROBLEM,CUSTOMER_SERVICE,False
+166,"@AmazonHelp Tomorrow (19/10). Still says ""Preparing for Dispatch"", can't believe will be delivered on time if it hasn't been dispatched yet",ORDER_DISPATCH,ORDER_DISPATCH,True
+167,"@AmazonHelp This link is not opening either, page can't be loaded error is getting displayed",WEBSITE_OR_APP,WEBSITE_OR_APP,True
+168,"@AmazonHelp thank you! Me too, my co worker loves wine and has cats so I figured this would be perfect for her. Any way for a replacement? I logged into my app and don’t see anything thx",OTHER,ORDER_CANCELLATION,False
+169,@AmazonHelp I am using website. The problem is present on just chrome browser. While it works fine in Firefox. Works fine in chrome on mobile as well. I am using chrome Version 62.0.3202.94 (Official Build) (64-bit) on desktop.,WEBSITE_OR_APP,DEVICE,False
+170,@AmazonHelp I’ve tried it on both the app and the desktop site and both have done the same thing,WEBSITE_OR_APP,DEVICE,False
+171,@AmazonHelp i did..no one called,CUSTOMER_SERVICE,RESOLUTION_CONFIRMATION,False
+172,"@AmazonHelp No call no msg,,, what a fantastic response... Total failure of APNI DUKAAN??",CUSTOMER_SERVICE,ORDER_DISPATCH,False
+173,"@AmazonHelp I have the ""Amazon Echo, Black (previous generation)"" 
+I have seen other @119038 streamers use it on there live streams to play music and would like to know how.",DEVICE,PRODUCT_INFORMATION,False
+174,@AmazonHelp Amazon EU.,CUSTOMER_SERVICE,WEBSITE_OR_APP,False
+175,@AmazonHelp I used @145869 and it’s showing the seller to be https://t.co/eFW8uDgHVP LLC,SELLER,SELLER,True
+176,@AmazonHelp Lp Collect,DELIVERY_PROBLEM,INSUFFICIENT_CONTEXT,False
+177,"@AmazonHelp I’ve already reached out to them and all I was told was that if they can’t try again and deliver it today, I’ll be given a refund.",DELIVERY_PROBLEM,REFUND,False
+178,"@AmazonHelp read tweet carefully and then reply ,package is in my city since early Thursday morning yet no sign of it getting delivered before Saturday😠",DELIVERY_DELAY,DELIVERY_DELAY,True
+179,@AmazonHelp UPS.,DELIVERY_PROBLEM,DELIVERY_TRACKING,False
+180,@AmazonHelp Celle du moment est la boutique lego!,CASUAL_ENGAGEMENT,PRODUCT_INFORMATION,False
+181,@AmazonHelp I think its a fake . Still no winner list put at nowhere. What is the fact about one plus 5 contest of 9 th June 2017 winner list??,OTHER,PRODUCT_INFORMATION,False
+182,"@AmazonHelp Quero um Kindle, mas preciso de agora, adianta para mim 💜",PRODUCT_INFORMATION,ORDER_DISPATCH,False
+183,@AmazonHelp Both by sellers. One of the items has now changed and is due to be delivered today. The other still says waiting to be dispatched. Why does it matter if it's an Amazon item or a different seller?,ORDER_DISPATCH,ORDER_DISPATCH,True
+184,"@AmazonHelp I’m aware of what two day shipping means. I’m also aware that the delivery date was supposed to be yesterday, and that I pay $99 per year and your response is ¯\_(ツ)_/¯",DELIVERY_DELAY,PAYMENT,False
+185,@AmazonHelp Hahahaha adorei! ❤️,CASUAL_ENGAGEMENT,CASUAL_ENGAGEMENT,True
+186,"@AmazonHelp Yes, and found it outside my door! But who knows if this note was even for me...",DELIVERY_PROBLEM,PACKAGE_NOT_RECEIVED,False
+187,"@AmazonHelp Thanks, I finally found the call option on the website and talk to a rep.",CUSTOMER_SERVICE,CUSTOMER_SERVICE,True
+188,@AmazonHelp Kaha kaha dalu yst I call u ur representative told me about cancelation mail received and fud process,ORDER_CANCELLATION,ORDER_CANCELLATION,True
+189,"@AmazonHelp fui garimpando os novos do SK, além de outros que eu queria faz tempo (tá bem variado)! vcs ainda vão me levar à falência kkkk",CASUAL_ENGAGEMENT,CASUAL_ENGAGEMENT,True
+190,@AmazonHelp I don't want return just keep the amount and let me aware the people,RETURN,RESOLUTION_CONFIRMATION,False
+191,@AmazonHelp Oui livraison en soirée impossible car le livreur refuse de rentrer dans l'immeuble (accord avec Amazon selon lui ) indiqué nulle part 1/2,DELIVERY_INSTRUCTIONS,DELIVERY_PROBLEM,False
+192,"@AmazonHelp Just says amazon shipping, other than that there no extra information on the order.",DELIVERY_TRACKING,ORDER_DISPATCH,False
+193,@AmazonHelp pcのみですか！タブレットではどうやっても無理…ですよね？,WEBSITE_OR_APP,DEVICE,False
+194,@AmazonHelp Yes all the items in my order are fulfilled by Amazon,SELLER,ORDER_CANCELLATION,False
+195,@AmazonHelp I have filled the form but i feels that your support going to bad day by day,CUSTOMER_SERVICE,CUSTOMER_SERVICE,True
+196,@AmazonHelp yet another delivery attempt fail. Was told an attempt was made but it wasn't. Been on w/ support for 1 hour.,DELIVERY_PROBLEM,DELIVERY_PROBLEM,True
+197,"@AmazonHelp All I get is an email saying they couldn't deliver. I've been on the phone with them three times about the first parcel, changed the delivery address, nothing has worked. I spoke with Amazon last night, but tried calling courier again today and can't get through.",DELIVERY_PROBLEM,DELIVERY_PROBLEM,True
+198,@AmazonHelp Because I sent everything on Saturday and no email has been received,OTHER,ORDER_DISPATCH,False
+199,"@AmazonHelp Thanks ! Hw much time does it take 2 reslv? Cn u share current status, I ws told it's goin 2 take 24-48hrs 2 resolve it, it's +6 dz nw !!!😤",CUSTOMER_SERVICE,ORDER_DISPATCH,False
+200,@AmazonHelp Ok it is usually good 🤗 just this time was off,FEEDBACK,DELIVERY_DELAY,False

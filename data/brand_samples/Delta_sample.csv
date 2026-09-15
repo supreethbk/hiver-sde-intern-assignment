@@ -1,0 +1,101 @@
+tweet_id,author_id,inbound,created_at,text,response_tweet_id,in_response_to_tweet_id
+609,Delta,False,Sat Aug 06 01:44:03 +0000 2016,"@115818 Glad to check. Pls, DM your confirmation number for assistance.  *QB https://t.co/6iDGBJAc2m",610,611.0
+790,Delta,False,Tue Oct 31 22:27:38 +0000 2017,@115882 I'm sorry. The earlier flight may not have been available at the time of your scheduled change. *TMT,791,792.0
+793,Delta,False,Tue Oct 31 22:52:37 +0000 2017,"@115882 My apologies. If that flight never showed up on your search, that would mean it was full.  *TMT",,791.0
+794,Delta,False,Tue Oct 31 22:25:31 +0000 2017,@115883 Please share additional details about the nature of this technical issue.  *AFC,795,796.0
+797,Delta,False,Tue Oct 31 23:07:41 +0000 2017,@115883 Please do.  *AFC https://t.co/6iDGBJAc2m,798,795.0
+799,Delta,False,Sun Oct 29 16:56:47 +0000 2017,"@115883 I sincerely apologize, our IT team is diligently working on it, we should have it up and working very soon.  *TMC","800,796",801.0
+802,Delta,False,Tue Oct 31 22:23:07 +0000 2017,"@115884 Oh, no! Please speak to a member of the flt crew for immediate assistance. *AAB",,803.0
+804,Delta,False,Tue Oct 31 22:22:01 +0000 2017,@115885 2/2 https://t.co/6iDGBJAc2m,"805,806",807.0
+809,Delta,False,Tue Oct 31 19:21:13 +0000 2017,"@115885 Hello, Richard! Please DM your confirmation# and I will try to assist. *TCC",807,810.0
+813,Delta,False,Tue Oct 31 18:42:21 +0000 2017,"@115885 Hi, Richard. Can you pls DM your confirmation number so I may look into this matter for you? Thanks! *TJF https://t.co/6iDGBJAc2m",811,814.0
+808,Delta,False,Tue Oct 31 22:22:00 +0000 2017,"@115885 Hi Richard, I apologize for the delayed response time. Please DM your conf # so I can review your trip details.  *TLT... 1/2",,807.0
+815,Delta,False,Tue Oct 31 22:15:15 +0000 2017,@115886 We sincerely apologize for your disappointment. We always strive to create a positive customer experience. *AJC,816,817.0
+818,Delta,False,Tue Oct 31 22:51:06 +0000 2017,"@115886 Hi Caesar, can you DM your confirmation # to the link provided? I will be glad to look into this for you.   *TBT https://t.co/6iDGBJAc2m",819,816.0
+820,Delta,False,Tue Oct 31 23:43:26 +0000 2017,@115886 I would be glad to look into this for you.  *TBT,821,819.0
+822,Delta,False,Wed Nov 01 04:55:04 +0000 2017,@115886 Thanks for your patience. *HCK,,821.0
+823,Delta,False,Wed Nov 01 04:49:19 +0000 2017,@115886 Thanks!  *HCK,,821.0
+824,Delta,False,Wed Nov 01 05:29:28 +0000 2017,@115886 Thank you for being the most important part of Delta.  https://t.co/YfI5Cj9udk *HCK,,821.0
+825,Delta,False,Wed Nov 01 05:28:54 +0000 2017,"@115886 I am including a link of our Commitment to our customers, please let us know if we can be of further assistance.  *HCK",,821.0
+826,Delta,False,Wed Nov 01 05:28:45 +0000 2017,@115886 It can be difficult to assign the same seating because the aircraft configuration may be different.  *HCK,,821.0
+827,Delta,False,Wed Nov 01 05:28:29 +0000 2017,@115886 ...possible. *HCK 2/2,,821.0
+828,Delta,False,Wed Nov 01 05:28:05 +0000 2017,"@115886 Unfortunately, we are not able to guarantee seats nor flight schedules.  *HCK",,821.0
+829,Delta,False,Wed Nov 01 05:27:05 +0000 2017,"@115886 Hi Caesar, I thank you for your patience. I had an opportunity to read the thread. *HCK",,821.0
+830,Delta,False,Wed Nov 01 05:31:26 +0000 2017,@115886 Please remember that help is just a tweet away. Have a wonderful evening.  *HCK,836,821.0
+837,Delta,False,Wed Nov 01 05:43:13 +0000 2017,@115886 ...guaranteed. It was changed because operational needs required such.  *ABN 3/3,840,836.0
+841,Delta,False,Wed Nov 01 05:50:23 +0000 2017,@115886 You're receiving the same answers because the information that's being relayed is the same.  *ABN,,840.0
+842,Delta,False,Wed Nov 01 05:49:44 +0000 2017,@115886 *a real *ABN,844,840.0
+845,Delta,False,Wed Nov 01 05:52:36 +0000 2017,"@115886 ...Thank you for tweeting us tonight, Caesar. *ABN 2/2",,844.0
+846,Delta,False,Wed Nov 01 05:52:35 +0000 2017,@115886 I regret that you aren't happy with the information given and apologize for not being able to address your concerns via this channel.... 1/2,,844.0
+843,Delta,False,Wed Nov 01 05:49:33 +0000 2017,"@115886 I assure you, I'm areal person, Caesar.  *ABN",,840.0
+838,Delta,False,Wed Nov 01 05:43:13 +0000 2017,"@115886 ...to shift. Because of such, though we try our best to honor seat requests, do note - it's just that, a request and is not... 2/3",,836.0
+839,Delta,False,Wed Nov 01 05:43:12 +0000 2017,"@115886 I understand your frustration and apologize again for your experience. As previously explained, schedule changes occur causing seats... 1/3",,836.0
+831,Delta,False,Wed Nov 01 05:30:04 +0000 2017,@115886 Thank you for being the most important part of Delta.  *HCK,,821.0
+832,Delta,False,Wed Nov 01 04:42:59 +0000 2017,"@115886 May I have your ticket number, please? Unfortunately, the confirmation provide is no longer active.  *HCK",847,821.0
+833,Delta,False,Wed Nov 01 04:37:32 +0000 2017,"@115886 Good evening, Caesar!  *HCK",,821.0
+834,Delta,False,Wed Nov 01 05:27:55 +0000 2017,"@115886 I would like to sincerely apologize for the stress, frustration, and the inconvenience that you endured due to an equipment change.  *HCK",,821.0
+835,Delta,False,Wed Nov 01 05:28:28 +0000 2017,"@115886 In the event of an equipment change, we put forth our best efforts to seat everyone together as they were, but sometimes that is not... 1/2",,821.0
+1837,Delta,False,Tue Oct 31 22:39:17 +0000 2017,@116119 Thank you. Please reach out to the Flight Attendants for assistance.  *TMT,,1838.0
+1839,Delta,False,Tue Oct 31 22:38:14 +0000 2017,@116120 Oh! Thanks for noticing! 😃 *TMT,,1840.0
+1841,Delta,False,Tue Oct 31 22:37:22 +0000 2017,@116121 Great! Please let us know if we can assist.  *HRO,,1842.0
+1843,Delta,False,Tue Oct 31 22:34:40 +0000 2017,@116121 I am showing DL 1262 is from LAS JFK?  *HRO,1842,1844.0
+1845,Delta,False,Tue Oct 31 22:35:03 +0000 2017,@116121 Oh ok.  Thanks for checking with us and we are here for you.  *HRO,,1844.0
+1847,Delta,False,Tue Oct 31 22:34:43 +0000 2017,@116122 Please follow this link for your request. Thank you.  https://t.co/an5C61CZZt *TMT,,1848.0
+1849,Delta,False,Tue Oct 31 22:34:22 +0000 2017,"@116123 Hey there, unfortunately, we are not able to assist with this request.  *TLT",1850,1851.0
+1852,Delta,False,Tue Oct 31 23:12:57 +0000 2017,@116123 So sorry to disappoint. :-( *TAC,,1850.0
+1853,Delta,False,Tue Oct 31 22:33:50 +0000 2017,"@116124 Enjoy, have a great week. 😊 *TBT",,1854.0
+1846,Delta,False,Tue Oct 31 22:32:50 +0000 2017,@116121 Oh no! One moment as I take a look.  *HRO,1855,1844.0
+1856,Delta,False,Tue Oct 31 22:31:12 +0000 2017,"@77483 Hi, Jenna. I apologize for your seating issue. Pls DM your conf # if I may assist, *AAB",1857,1858.0
+1859,Delta,False,Wed Nov 01 02:04:08 +0000 2017,"@77483 We appreciate your feedback, Jenna and thank you for sharing your concerns.  *ABN",1860,1857.0
+1861,Delta,False,Wed Nov 01 02:12:04 +0000 2017,@77483 Please use the link to provide your confirmation #. *ABN https://t.co/6iDGBJAc2m,,1860.0
+1862,Delta,False,Tue Oct 31 22:30:40 +0000 2017,@116126 I’d be delighted to assist. Please follow and DM your confirmation number.  *AFC https://t.co/6iDGBJAc2m,,1863.0
+2790,Delta,False,Tue Oct 31 22:55:48 +0000 2017,"@116371 Will do, have a great week.😊 *TBT",,2791.0
+2792,Delta,False,Tue Oct 31 22:52:38 +0000 2017,"@116371 Wow, that's what we love to hear! We appreciate your loyalty and support. Thank you for choosing Delta. 😊 *HKC",2791,2793.0
+2795,Delta,False,Tue Oct 31 22:54:23 +0000 2017,@116372 @116373 Hi Jamie! Thanks for the awesome compliment for our PDX staff member. Happy travels. 😊 *HKC,,2796.0
+3189,Delta,False,Sun Nov 26 00:28:26 +0000 2017,@116448 Pls follow/DM your confirmation or ticket number to take a look. *AFM https://t.co/6iDGBJAc2m,,3190.0
+3191,Delta,False,Sun Nov 26 00:15:32 +0000 2017,"@116448 Hi Justin. The equivalent of a personal item is one similar to a purse or backpack. As long as this item fits under the seat in front of you, you should be okay. *TKR",3190,3192.0
+3193,Delta,False,Sun Nov 26 00:24:47 +0000 2017,"@116449 We would love to have you back with us, Lina.  *HCA",,3194.0
+3195,Delta,False,Sun Nov 26 00:24:38 +0000 2017,@116451 Please follow and DM your confirmation number.  *AFC https://t.co/6iDGBJAc2m,,3196.0
+3197,Delta,False,Sun Nov 26 00:24:15 +0000 2017,@116451 I would ask you please to avoid the use of that type of language.  *AFC,3199,3196.0
+3200,Delta,False,Sun Nov 26 00:24:02 +0000 2017,"@116452 I will be happy to look into this further for you. Could you please provide your confirmation number via DM, please?  *HFG",,3201.0
+3202,Delta,False,Sun Nov 26 00:14:54 +0000 2017,@116452 I am really sorry to hear that and I hope you will allow us to provide you better service in the future.  *AFM,3201,3203.0
+3214,Delta,False,Sun Nov 26 00:20:40 +0000 2017,"@116456 Kevin, I will be assisting you with the upgrade request. Please allow me just a minute to pull all of the information together for an accurate quote. *ACJ",3215,3216.0
+3217,Delta,False,Sun Nov 26 00:38:33 +0000 2017,@116456 Sure thing. So you would like to go ahead and be added to the upgrade waitlist? *ACJ,3218,3215.0
+3219,Delta,False,Sun Nov 26 00:39:57 +0000 2017,"@116456 Correct. It will be a total of 130,000 for the round trip, if it becomes available. *ACJ",3220,3218.0
+3221,Delta,False,Sun Nov 26 00:45:17 +0000 2017,"@116456 Since the space is not currently available, you can decide and get back to us when you are ready. *ACJ",3222,3220.0
+3223,Delta,False,Sun Nov 26 00:48:57 +0000 2017,@116456 Sure thing! Have a great flight. We truly appreciate your loyalty to our brand! *ACJ,,3222.0
+3198,Delta,False,Sun Nov 26 00:19:02 +0000 2017,"@116451 I hear the frustration. If you care to share details, please follow and DM details. *AFC https://t.co/6iDGBJAc2m",,3196.0
+3225,Delta,False,Sun Nov 26 00:18:16 +0000 2017,@116457 We appreciate your constructive feedback and are taking it under serious advisement.  *AFC,3226,3227.0
+3228,Delta,False,Sun Nov 26 00:29:56 +0000 2017,"@116457 On behalf of AFC, again, we appreciate your feedback. *ACJ",,3226.0
+3229,Delta,False,Sun Nov 26 00:14:40 +0000 2017,@116458 You’ve been a pleasure to tweet with. Have a wonderful day. *AFC,,3230.0
+3231,Delta,False,Sat Nov 25 22:32:05 +0000 2017,"@116458 Hello, Ismail. Thank you for sharing.  *AFM",3230,3232.0
+3234,Delta,False,Sun Nov 26 00:11:48 +0000 2017,"@116460 Hello, Maggi. I'll be glad to check for you. Please DM your confirmation number for privacy. *TAC https://t.co/6iDGBJAc2m",3235,3236.0
+3237,Delta,False,Sun Nov 26 00:10:59 +0000 2017,"@116461 Cooper, I'm sorry about the Wi-Fi! Please, be sure to report the matter to our Wi-Fi partner Gogo at @116462 or 1.877.350.0038. They need to get details from you of any messages or details you got during your attempt. *AFM",,3238.0
+3239,Delta,False,Sun Nov 26 00:09:08 +0000 2017,"@116463 On behalf of *TAC, you are very welcome. *AFM",,3240.0
+3241,Delta,False,Sat Nov 25 23:14:17 +0000 2017,"@116463 We're sorry to hear you're disappointed. If we can be of any assistance, please don't hesitate to tweet us about it. We're here for you. *TAC",3240,3242.0
+3243,Delta,False,Sun Nov 26 00:08:42 +0000 2017,"@116464 Hey there. To qualify for a full refund you would have to cancel your reservation within 24 hours of the purchase being made. Otherwise, you are subject to fees and or difference in fare. I hope this helps clarify your concerns, today.  *HFG","3244,3245",3246.0
+3247,Delta,False,Sun Dec 03 18:52:36 +0000 2017,"@116464 Hello. I'm here to help. Please DM the ticket number or Confirmation number, here, for review. Thanks! *TSL https://t.co/6iDGBJAc2m",,3245.0
+3248,Delta,False,Sun Nov 26 00:06:19 +0000 2017,@116465 😃 *TMB,,3249.0
+3250,Delta,False,Sat Nov 25 23:24:08 +0000 2017,"@116465 Great picture, thanks for sharing!  *TMB",3249,3251.0
+3252,Delta,False,Sun Nov 26 00:06:15 +0000 2017,"@116466 Hello, there. Thank you for sharing.  *AFM",,3253.0
+3258,Delta,False,Sun Nov 26 00:05:48 +0000 2017,"@116468 Hi Kyle, thanks for recognizing our employees. We're proud of our crew too. Every day our team is working to make flying with us better! *TMB",,3259.0
+3260,Delta,False,Sun Nov 26 00:05:09 +0000 2017,@116469 Hi Kelli. I truly regret the frustration we've caused you. Please contact our Baggage Service Center at 800-325-8224 and are open from 7:00 AM - 1:00 AM.  *TKR,"3261,3262",3263.0
+3264,Delta,False,Sun Nov 26 00:03:41 +0000 2017,"@116470 Hello, John. Our system shows you were already compensated for flight 4459 today with $100.00 Delta travel vouchers for each of you. Unfortunately, I cannot double compensate for the same flight. I am sorry to disappoint.  *TAC",3265,3266.0
+3267,Delta,False,Sun Nov 26 01:11:41 +0000 2017,@116470 You're most welcome. We are here for you 24/7. Tweet us anytime! *TAC,,3265.0
+3268,Delta,False,Sat Nov 25 22:40:21 +0000 2017,"@116470 I can authorize 5,000 bonus Skymiles be deposited into each of your SkyMiles accounts as a gesture for the inconvenience. (2/2) *TAC",3266,3269.0
+3273,Delta,False,Sun Nov 26 00:03:01 +0000 2017,"@116472 Mary, I am sorry to hear that. Thank you for taking the time and providing this feedback.  *AFM",,3274.0
+3286,Delta,False,Sun Nov 26 00:00:06 +0000 2017,"@116474 Matthew, I am really sorry for the delay. Your patience is appreciated as we hope to get you going soon. *AFM",,3287.0
+3288,Delta,False,Sat Nov 25 23:59:41 +0000 2017,@116475 Hey there. How can I help?  *HFG,,3289.0
+3290,Delta,False,Sat Nov 25 23:59:16 +0000 2017,@116476 I apologize deeply for the delay. We hope to have you on your way as soon as possible.  *HFG,,3291.0
+3292,Delta,False,Sat Nov 25 21:44:57 +0000 2017,"@116476 Hello, Holly. I do apologize for the delay. Delays are never fun. They are working hard to get you in the air ASAP. As of now, your flight is estimated to depart at 5:45 pm and estimated to arrive at 8:46 pm. *TAC",3291,3293.0
+3294,Delta,False,Sat Nov 25 23:59:07 +0000 2017,"@116477 Sure, Jun. Please DM with your questions or concerns. *ACJ",,3295.0
+3296,Delta,False,Sat Nov 25 23:23:38 +0000 2017,"@116477 Please allow 24 to 72 hours, for the miles to be redeposited. The cash portion will be redeposited within 6  to 10 business days.  *AFC",3295,3297.0
+3299,Delta,False,Sat Nov 25 22:49:08 +0000 2017,@116477 May I have your confirmation number? *AFC https://t.co/6iDGBJAc2m,3297,3300.0
+3830,Delta,False,Tue Oct 31 23:06:40 +0000 2017,"@116645 😎, Have a great week. 😊 *TBT",,3831.0
+3832,Delta,False,Tue Oct 31 23:05:15 +0000 2017,"@116646 ...anxiety, frustration, and inconvenience that we have caused.   *TJN 2/2",,3833.0
+3835,Delta,False,Tue Oct 31 23:01:32 +0000 2017,"@116647 Hey Joan, thanks for asking. The  SLC to LHR non-stop is a seasonal route and will resume 3/24/2018. *TLT",,3836.0
+3837,Delta,False,Mon Oct 16 00:07:39 +0000 2017,Love in the 🍑 state ! We’re happy to be on the ground to support #ATLPride. #PrideInFlight https://t.co/7QC6Iq3B1U,"3836,3838,3839,3840,3841,3842,3843,3844,3845,3846,3847,3848,3849,3850,3851,3852,3853,3854,3855,3856,3857,3858,3859,3860,3861,3862,3863,3864,3865,3866,3867,3868,3869,3870,3871,3872,3873,3874,3875,3876,3877,3878,3879,3880,3881",
+3882,Delta,False,Tue Oct 31 23:00:32 +0000 2017,@116648 Hmmm okay. Thanks so much for following up with us. I will be sure to share this with our Software team. *HKC,,3883.0
+3884,Delta,False,Tue Oct 31 14:38:12 +0000 2017,@116648 Is this in our Comments/Complaints section? *HKC,3883,3885.0
+4988,Delta,False,Tue Oct 31 23:29:10 +0000 2017,@116882 Thanks for sharing your feedback with us Travis. We will be sure to share your concerns with Leadership. *HKC,,4989.0
+4990,Delta,False,Tue Oct 31 23:24:41 +0000 2017,"@116883 My apologies, Wendy. You may call Reservations at one of the worldwide locations listed here: https://t.co/kqomiX8FCI *AAB",,4991.0
