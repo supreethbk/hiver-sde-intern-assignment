@@ -14,6 +14,8 @@ Checks the reply for obvious data leakage.
 
 Decides whether the interaction should be automatically handled or escalated.
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
 1. Complete Pipeline
 
 +-------------------------+
@@ -79,6 +81,8 @@ Deterministic Safety Rules
               +
 Rule-based Escalation
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
 2. Problem Framing
 
 What this project builds
@@ -119,6 +123,8 @@ or claim production-level reliability.
 
 The generated response is a draft only.
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
 3. Dataset
 
 Source
@@ -152,6 +158,8 @@ results/
 The raw dataset is stored under:
 
 data/raw/twcs.csv
+
+------------------------------------------------------------------------------------------------------------------------------------------
 
 4. Golden Evaluation Set
 
@@ -191,6 +199,8 @@ data/golden/golden_set.csv
 results/amazonhelp_golden_labeled.csv
 
 The evaluation set contains 200 examples and is frozen for comparison between experiments.
+
+------------------------------------------------------------------------------------------------------------------------------------------
 
 5. Models
 
@@ -269,6 +279,8 @@ ESCALATE
 
 The escalation result is treated as a policy outcome, not an accuracy metric, because the current evaluation data does not contain human-labelled escalation ground truth.
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
 6. Intent Classification Results
 
 The classifier was evaluated on the same frozen 200-example golden set.
@@ -335,6 +347,8 @@ Current Qwen 2.5 7B classifier
 
 The current result is an experimental result on the frozen 200-example golden set. It should not be interpreted as production accuracy.
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
 7. Retrieval Results
 
 Two retrieval approaches were explored.
@@ -362,6 +376,8 @@ The earlier intent-aware retrieval experiment achieved:
 38.50% top-1 intent match
 
 This showed that retrieval can provide useful historical context without necessarily solving the intent-classification problem.
+
+------------------------------------------------------------------------------------------------------------------------------------------
 
 8. Reply Generation
 
@@ -396,6 +412,8 @@ Historical evidence is cleaned before being included in the generation prompt.
 Generated replies are passed through deterministic safety checks.
 
 The generated text is intended to be a support-reply draft, not an executed customer-service action.
+
+------------------------------------------------------------------------------------------------------------------------------------------
 
 9. Reply Safety Results
 
@@ -433,6 +451,8 @@ Result file:
 results/reply_leakage_results_20.csv
 
 This is a deterministic safety signal and does not establish that every generated reply is factually correct.
+
+------------------------------------------------------------------------------------------------------------------------------------------
 
 10. LLM Reply Quality Judge
 
@@ -486,6 +506,8 @@ Result file:
 
 results/reply_quality_judge_20.csv
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
 11. Judge-Human Calibration
 
 A small independent human calibration sample of 10 replies was compared with the LLM judge.
@@ -500,6 +522,8 @@ The calibration sample is very small.
 These results indicate weak agreement in this sample, so the LLM judge is not treated as a replacement for human evaluation.
 
 This is especially important because an LLM judge can produce plausible explanations while still applying an inconsistent scoring rubric.
+
+------------------------------------------------------------------------------------------------------------------------------------------
 
 12. Escalation Decision
 
@@ -540,6 +564,8 @@ Result files:
 
 results/escalation_results_reply_20.csv
 results/escalation_results_200.csv
+
+------------------------------------------------------------------------------------------------------------------------------------------
 
 13. Top Five Failure Modes
 
@@ -622,6 +648,8 @@ Hypothesis:
 
 Correct classification requires understanding the fulfilment timeline and state rather than matching isolated words such as "shipping", "delivery", or "order".
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
 14. What Is Misleading About the Headline Number?
 
 The current headline number is:
@@ -661,6 +689,8 @@ It should not be presented as:
 55.50% overall support-agent accuracy
 
 The reply-generation evaluation also demonstrates why a single classifier number is insufficient: a response can be fluent and stylistically acceptable while still having grounding or factual-safety weaknesses.
+
+------------------------------------------------------------------------------------------------------------------------------------------
 
 15. Key Findings
 
@@ -751,6 +781,8 @@ and delay.
 
 These categories require interpreting conversational state rather than simply identifying keywords.
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
 16. Limitations
 
 The golden evaluation set contains only 200 manually labelled examples.
@@ -776,6 +808,8 @@ The generated reply is a draft and does not execute real customer-service operat
 Local model behaviour can vary with model versions, prompts, and runtime configuration.
 
 Therefore, the reported metrics should be treated as experimental evaluation results rather than production-level benchmarks.
+
+------------------------------------------------------------------------------------------------------------------------------------------
 
 17. Reproduction
 
@@ -861,6 +895,8 @@ Run classifier error analysis
 
 python test/error_analysis.py
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
 18. Important Result Files
 
 results/
@@ -882,6 +918,8 @@ results/amazonhelp_customer_support_pairs.csv
 results/amazonhelp_pairs_analyzed.csv
 results/amazonhelp_reference_pool.csv
 results/reference_labeled_100.csv
+
+------------------------------------------------------------------------------------------------------------------------------------------
 
 19. Project Structure
 
@@ -930,6 +968,8 @@ src/data/
 test/
     Evaluation and analysis scripts
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
 20. Decision Log
 
 The project maintains a decision log containing non-obvious implementation and evaluation decisions.
@@ -962,6 +1002,8 @@ escalation,
 
 and evaluation methodology.
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
 21. One-Week Next Steps
 
 If development continued for one week, the priority areas would be:
@@ -991,6 +1033,8 @@ Create a manually labelled escalation ground-truth set.
 Improve retrieval using support-state and intent information.
 
 Reduce unsupported claims about account access, investigations, policies, and operational actions.
+
+------------------------------------------------------------------------------------------------------------------------------------------
 
 22. Summary
 
