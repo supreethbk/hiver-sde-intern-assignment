@@ -1,5 +1,10 @@
 import pandas as pd
-from classifier import classify
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from src.intent.classifier_v2 import classify
 
 
 INPUT_FILE = "results/amazonhelp_golden_labeled.csv"

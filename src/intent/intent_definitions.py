@@ -1,1 +1,25 @@
-"""Intent labels and definitions."""
+"""AmazonHelp intent taxonomy used by the production pipeline."""
+
+INTENT_DEFINITIONS = {
+    "ACCOUNT": "Problems with an Amazon account, access, security, or account settings.",
+    "CASUAL_ENGAGEMENT": "Casual engagement with Amazon, not a specific support problem.",
+    "CUSTOMER_SERVICE": "Customer needs direct assistance from Amazon support.",
+    "DELIVERY_DELAY": "The package is delayed, late, or past its expected delivery date.",
+    "DELIVERY_INSTRUCTIONS": "Customer wants to set, change, or clarify delivery instructions.",
+    "DELIVERY_PROBLEM": "A delivery went wrong, including wrong location, unsafe placement, or handling.",
+    "DELIVERY_TRACKING": "Customer asks for package location, current shipping status, or tracking.",
+    "DEVICE": "Problem with an Amazon device or hardware product.",
+    "FEEDBACK": "Customer provides feedback, comments, reviews, or opinions about Amazon.",
+    "INSUFFICIENT_CONTEXT": "Message is too vague to determine the actual support issue.",
+    "ORDER_CANCELLATION": "Customer wants to cancel an existing order or asks about cancellation.",
+    "ORDER_DISPATCH": "Order has not been dispatched, shipped, or processed for shipment.",
+    "OTHER": "Support message that does not fit a defined specific intent.",
+    "PACKAGE_NOT_RECEIVED": "Package was marked or expected delivered but customer did not receive it.",
+    "PAYMENT": "Payment, charge, billing, or payment-method problem or question.",
+    "PRODUCT_INFORMATION": "Question about product features, availability, or details.",
+    "REFUND": "Question or problem about a refund or receiving a refund.",
+    "RESOLUTION_CONFIRMATION": "Customer confirms a previous problem is resolved.",
+    "RETURN": "Customer wants to return an item or asks about the return process.",
+    "SELLER": "Question or problem involving an Amazon seller or marketplace seller.",
+    "WEBSITE_OR_APP": "Problem using the Amazon website, mobile app, links, pages, or site functionality.",
+}

@@ -1,401 +1,541 @@
-# Final report
-# Hiver Support-Agent Final Report
+Hiver Support-Agent Final Report
 
-## 1. Problem Framing
+1. Problem Framing
 
-The goal is to build a small AI customer-support agent using real historical customer-support conversations.
+The goal is to build a small AI customer-support agent using real historical customer-support conversations from the Customer Support on Twitter (TWCS) dataset.
 
-For each incoming customer message, the system performs three tasks:
+For each incoming customer message, the system:
 
-1. Classifies the message into an intent taxonomy derived from the historical data.
-2. Drafts a support reply grounded in historical AmazonHelp resolution patterns.
-3. Decides whether the reply can be automatically handled or should be escalated.
+Classifies the message into a support-intent taxonomy.
 
-The target brand selected from the Customer Support on Twitter (TWCS) dataset was AmazonHelp.
+Retrieves historical AmazonHelp support evidence.
 
-The main challenge is not simply generating fluent replies. The system must distinguish similar support situations, use historical evidence without leaking private information, avoid unsupported claims, and recognize when a human/support workflow is required.
+Drafts a concise response grounded in historical support patterns.
 
----
+Checks the generated response for obvious leakage.
 
-## 2. Dataset and Evaluation Set
+Decides whether the interaction should be automatically handled or escalated.
+
+The target brand is AmazonHelp.
+
+The project deliberately does not attempt to access real customer accounts, perform refunds/cancellations, modify orders, contact customers, or replace human support workflows. The generated response is a draft.
+
+The main challenge is therefore not just fluent text generation. The system must distinguish closely related support situations, use historical evidence without leaking artifacts, avoid unsupported operational claims, and recognize cases that should be escalated.
+
+2. Dataset and Evaluation Set
 
 The TWCS dataset contains approximately 3 million tweets.
 
-For AmazonHelp:
+For AmazonHelp, the extracted data contains:
 
-- AmazonHelp tweets: 169,840
-- Reconstructed conversations: 82,556
-- Direct customer → AmazonHelp pairs: 70,956
-- Unique customer messages in direct pairs: 66,347
+AmazonHelp tweets: 169,840
 
-A manually labelled golden set of 200 unique customer messages was created using random sampling (`random_state=42`).
+Reconstructed conversations: 82,556
 
-The golden set contains 21 intents:
+Direct customer → AmazonHelp pairs: 70,956
 
-- ACCOUNT
-- CASUAL_ENGAGEMENT
-- CUSTOMER_SERVICE
-- DELIVERY_DELAY
-- DELIVERY_INSTRUCTIONS
-- DELIVERY_PROBLEM
-- DELIVERY_TRACKING
-- DEVICE
-- FEEDBACK
-- INSUFFICIENT_CONTEXT
-- ORDER_CANCELLATION
-- ORDER_DISPATCH
-- OTHER
-- PACKAGE_NOT_RECEIVED
-- PAYMENT
-- PRODUCT_INFORMATION
-- REFUND
-- RESOLUTION_CONFIRMATION
-- RETURN
-- SELLER
-- WEBSITE_OR_APP
+Unique customer messages in direct pairs: 66,347
 
-The golden examples were excluded from the historical retrieval pool to reduce evaluation leakage.
+A manually labelled golden set of 200 unique customer messages was created using random sampling with random_state=42.
 
----
+The final taxonomy contains 21 intents:
 
-## 3. System Approach
+ACCOUNT
 
-The system consists of four main stages:
+CASUAL_ENGAGEMENT
 
-### Stage 1 — Intent Classification
+CUSTOMER_SERVICE
 
-A local Qwen 2.5 3B model is given the customer message and the 21 intent definitions.
+DELIVERY_DELAY
 
-The model must return exactly one intent.
+DELIVERY_INSTRUCTIONS
 
-Several prompt and few-shot variations were tested. The original baseline performed better than the attempted prompt and few-shot variants.
+DELIVERY_PROBLEM
 
-### Stage 2 — Historical Retrieval
+DELIVERY_TRACKING
 
-Historical AmazonHelp customer/support pairs are used as potential evidence for response generation.
+DEVICE
 
-Two retrieval approaches were evaluated:
+FEEDBACK
 
-- TF-IDF nearest-neighbour retrieval
-- Semantic embedding retrieval using `nomic-embed-text`
+INSUFFICIENT_CONTEXT
 
-A 3,000-example historical reference subset was embedded locally for the semantic retrieval experiment.
+ORDER_CANCELLATION
 
-### Stage 3 — Reply Generation
+ORDER_DISPATCH
 
-The retrieved historical support response is supplied as evidence to the local language model.
+OTHER
 
-The generation prompt instructs the model to:
+PACKAGE_NOT_RECEIVED
 
-- stay grounded in the historical evidence,
-- avoid inventing policies or account information,
-- avoid claiming private account access,
-- avoid unsupported refunds, replacements, cancellations, investigations, or status checks,
-- avoid leaking historical URLs, IDs, usernames, dates, carriers, sellers, or agent identifiers.
+PAYMENT
+
+PRODUCT_INFORMATION
+
+REFUND
+
+RESOLUTION_CONFIRMATION
+
+RETURN
+
+SELLER
+
+WEBSITE_OR_APP
+
+The 200 golden examples were excluded from the historical reference pool to reduce direct evaluation leakage.
+
+3. System Approach
+
+Stage 1 — Intent Classification
+
+The current classifier uses a local Qwen 2.5 7B model through Ollama.
+
+The model receives the customer message and the 21 intent definitions with explicit intent boundaries. Deterministic rules handle several high-confidence patterns before/around the model classification.
+
+The current frozen evaluation result is:
+
+111 / 200 = 55.50% accuracy
+
+Stage 2 — Historical Retrieval
+
+Historical AmazonHelp customer/support pairs are used as evidence for response generation.
+
+Two retrieval approaches were explored:
+
+TF-IDF nearest-neighbour retrieval
+
+Semantic embedding retrieval using nomic-embed-text
+
+A reproducible 3,000-example historical reference subset was embedded for the semantic retrieval experiment.
+
+Stage 3 — Reply Generation
+
+Reply generation uses a local Qwen 2.5 3B model.
+
+The generation prompt uses cleaned historical customer issues as contextual evidence and instructs the model not to:
+
+claim private account access,
+
+claim investigations it cannot perform,
+
+invent refunds, replacements, or cancellations,
+
+invent delivery status or policies,
+
+expose historical URLs, usernames, IDs, or agent identifiers.
 
 A deterministic safety check is applied to generated replies.
 
-### Stage 4 — Escalation
+Stage 4 — Escalation
 
-A rule-based escalation layer determines whether an interaction should be automatically handled or escalated.
+A rule-based escalation layer determines whether the interaction is:
 
-Sensitive intents such as account, payment, refund, cancellation, package-not-received, delivery problems, seller issues, and website/app problems are routed toward escalation.
+AUTO_HANDLE
 
-The purpose is to prevent the system from automatically handling cases that may require private account access or a support action.
+ESCALATE
 
----
+Sensitive or operational cases are generally routed toward escalation.
 
-## 4. Baselines and Results
+The escalation result is treated as a policy outcome, not an accuracy metric, because the current evaluation data has no human-labelled escalation ground truth.
 
-### Baseline 1 — LLM Intent Classification
+4. Baselines and Intent Results
 
-The local Qwen 2.5 3B classifier was evaluated on all 200 golden examples.
+The same frozen 200-example golden set was used for classifier comparisons.
 
-**Result: 77/200 = 38.50% accuracy**
+Approach
 
-This provides the primary intent-classification baseline.
+Correct
 
-The largest observed confusions included:
+Accuracy
 
-- CUSTOMER_SERVICE → RESOLUTION_CONFIRMATION: 8
-- OTHER → ORDER_CANCELLATION: 6
-- CUSTOMER_SERVICE → ORDER_DISPATCH: 5
-- DELIVERY_DELAY → ORDER_DISPATCH: 4
-- DELIVERY_PROBLEM → DELIVERY_TRACKING: 4
+TF-IDF nearest neighbour
 
-These errors show that the difficult cases are often semantically close support situations rather than completely unrelated intents.
+30 / 200
 
-### Baseline 2 — TF-IDF Similarity
+15.00%
 
-A TF-IDF nearest-neighbour baseline was evaluated using the manually labelled reference examples.
+Majority-class baseline
 
-**Result: 30/200 = 15.00%**
+37 / 200
 
-This was substantially worse than the LLM classifier.
+18.50%
 
-The experiment also showed that surface word similarity can be misleading. Messages with highly similar wording can represent different support intents.
+Few-shot v2
 
-### Prompt/Few-Shot Experiments
+70 / 200
 
-A stricter delivery-focused prompt was tested.
+35.00%
 
-**Result: 29.00%**
+Original Qwen 2.5 3B
 
-A few-shot classifier using up to three examples per intent was also tested.
+77 / 200
 
-**Result: 35.00%**
+38.50%
 
-Neither improved on the 38.50% baseline.
+Current Qwen 2.5 7B
 
-This was retained as an important negative result rather than selecting a worse approach simply because it was more complex.
+111 / 200
 
-### Semantic Retrieval
+55.50%
 
-Semantic retrieval using `nomic-embed-text` was tested on the 3,000-example reference subset.
+The current classifier therefore improves over the original Qwen 2.5 3B baseline on the frozen evaluation set.
 
-The semantic retriever produced stronger semantic matches than the TF-IDF approach in qualitative inspection, but intent-aware retrieval did not improve the final classification result.
+Interpretation
 
-The intent-aware retrieval experiment achieved:
+The result should be treated as an experimental benchmark on 200 manually labelled examples. It is not a production accuracy estimate.
 
-**38.50% top-1 intent match**
+The largest observed errors are concentrated around semantically similar support states rather than completely unrelated topics.
 
-Therefore, semantic similarity alone was not treated as evidence that the retrieval approach solved the intent problem.
+5. Retrieval Results
 
----
+TF-IDF
 
-## 5. Reply Generation Evaluation
+The TF-IDF nearest-neighbour approach achieved:
+
+30 / 200 = 15.00% top-1 intent match
+
+This provides a simple lexical-similarity baseline.
+
+Semantic Retrieval
+
+Semantic retrieval uses nomic-embed-text and a 3,000-example historical reference subset.
+
+Qualitative inspection showed semantically meaningful neighbours. However, the intent-aware retrieval experiment achieved:
+
+38.50% top-1 intent match
+
+This did not improve on the original LLM classifier.
+
+The result supports using retrieval as historical context for response generation rather than assuming semantic similarity alone can solve intent classification.
+
+6. Reply Generation Evaluation
 
 Reply generation was evaluated on 20 examples.
 
-### Deterministic leakage safety
+Deterministic leakage safety
 
-**20/20 generated replies passed the implemented leakage checks.**
+The leakage evaluation reported:
 
-The checks looked for obvious leakage such as:
+20 / 20 replies clean
 
-- URLs
-- Twitter usernames
-- placeholders
-- agent identifiers
-- signatures
-- order/tracking identifiers
+That is:
 
-This demonstrates that the generation pipeline can remove obvious historical-data artifacts.
+Leakage-free: 20
 
----
+Leakage detected: 0
 
-### LLM-as-Judge
+Leakage rate: 0.0%
 
-The 20 replies were evaluated using an LLM judge across six dimensions.
+The implemented checks cover obvious artifacts including:
 
-| Dimension | Score |
-|---|---:|
-| Relevance | 1.65 / 2 |
-| Usefulness | 1.55 / 2 |
-| Grounding | 0.65 / 2 |
-| Factual safety | 1.90 / 2 |
-| Leakage safety | 1.90 / 2 |
-| Style | 1.40 / 2 |
-| **Total** | **9.05 / 12** |
+URLs
+
+Twitter usernames
+
+placeholders
+
+agent identifiers
+
+signatures
+
+order/tracking identifiers
+
+This demonstrates that the evaluated replies did not contain the tested leakage patterns. It does not prove complete factual or security safety.
+
+LLM-as-Judge
+
+The 20 replies were also evaluated with a local LLM judge.
+
+Dimension
+
+Score
+
+Relevance
+
+1.85 / 2
+
+Usefulness
+
+1.30 / 2
+
+Grounding
+
+0.30 / 2
+
+Factual safety
+
+0.30 / 2
+
+Leakage safety
+
+0.00 / 2
+
+Style
+
+1.95 / 2
+
+Total
+
+5.70 / 12
 
 All 20 judgments were successfully parsed.
 
-The results show that the generated replies were generally relevant and reasonably useful, while grounding remained the weakest dimension.
+The judge output suggests that response relevance and style were stronger than grounding and factual-safety dimensions in this run.
 
-This highlights an important difference between fluent response generation and trustworthy support behaviour: a reply can sound professional while still being insufficiently grounded in historical resolution patterns.
+However, some numerical scores were inconsistent with the accompanying judge explanations. Therefore, these scores are treated as a supporting evaluation signal, not ground truth.
 
-The LLM judge is therefore treated as a supporting evaluation signal rather than definitive evidence of reply quality.
+7. Human Calibration of the LLM Judge
 
----
+A small independent human calibration sample of 10 replies was compared with the LLM judge.
 
-## 6. Escalation Results
+Results:
 
-The current escalation evaluation was run on the 20 examples used for reply-generation evaluation.
+Exact agreement: 20%
 
-| Decision | Count | Percentage |
-|---|---:|---:|
-| AUTO_HANDLE | 6 | 30% |
-| ESCALATE | 14 | 70% |
-| **Total** | **20** | **100%** |
+Quadratic weighted kappa: -0.129
 
-The policy consistently escalated sensitive categories such as:
+The sample is small, so this is not a production reliability estimate.
 
-- ACCOUNT
-- PAYMENT
-- REFUND
-- ORDER_CANCELLATION
-- PACKAGE_NOT_RECEIVED
-- DELIVERY_PROBLEM
-- DEVICE
-- SELLER
-- WEBSITE_OR_APP
-- CUSTOMER_SERVICE
-- OTHER
-- INSUFFICIENT_CONTEXT
-- ORDER_DISPATCH
+The result nevertheless provides evidence that the current judge should not replace human evaluation. A larger human-labelled calibration set would be needed before relying on the judge as a strong quality metric.
 
-It automatically handled lower-risk categories such as:
+8. Escalation Results
 
-- CASUAL_ENGAGEMENT
-- DELIVERY_INSTRUCTIONS
-- DELIVERY_TRACKING
-- FEEDBACK
-- PRODUCT_INFORMATION
+The reply-generation evaluation set contains 20 examples.
 
-Some conditional categories require further refinement because a safe decision can depend on the content of the generated reply, not only the predicted intent.
+Decision
 
-The **70% escalation rate is a policy outcome, not an accuracy metric**, because the current evaluation set does not contain human-labelled escalation ground truth.
+Count
 
-A separate 200-example policy-coverage run is retained in `results/escalation_results_200.csv`.
+Percentage
 
----
+AUTO_HANDLE
 
-## 7. Top Five Failure Modes
+6
 
-### Failure Mode 1 — Customer Service vs Resolution Confirmation
+30%
 
-**Observed confusion:** CUSTOMER_SERVICE → RESOLUTION_CONFIRMATION
+ESCALATE
 
-The model often interprets resolution-related language as confirmation that a support issue has already been resolved.
+14
 
-**Hypothesis:** The two intents contain overlapping support language and conversational context. The model needs stronger distinction between a customer requesting help and a customer confirming an already completed resolution.
+70%
 
----
+Total
 
-### Failure Mode 2 — Other vs Transactional Intents
+20
 
-**Observed confusion:** OTHER → ORDER_CANCELLATION
+100%
 
-Generic or unusual support requests were sometimes forced into a specific transactional intent.
+A separate policy-coverage run over all 200 golden examples produced:
 
-**Hypothesis:** The classifier appears biased toward recognizable transactional categories when the message does not clearly fit one of the defined intents.
+AUTO_HANDLE: 63 / 200 = 31.5%
 
----
+ESCALATE: 137 / 200 = 68.5%
 
-### Failure Mode 3 — Customer Service vs Order Dispatch
+These numbers describe the behaviour of the implemented escalation policy. They are not escalation accuracy, because no human-labelled escalation ground truth is available.
 
-**Observed confusion:** CUSTOMER_SERVICE → ORDER_DISPATCH
+9. Top Five Failure Modes
 
-Messages mentioning an order or shipment were sometimes classified as dispatch problems even when the main purpose was requesting general assistance.
+1. RESOLUTION_CONFIRMATION vs CASUAL_ENGAGEMENT
 
-**Hypothesis:** Strong order-related keywords can dominate the broader customer-service intent.
+Short messages such as "Thanks", "Merci", or similar acknowledgements can be ambiguous.
 
----
+Observed error pattern:
 
-### Failure Mode 4 — Delivery Delay vs Order Dispatch
+RESOLUTION_CONFIRMATION → CASUAL_ENGAGEMENT
 
-**Observed confusion:** DELIVERY_DELAY → ORDER_DISPATCH
+Hypothesis: Both categories contain short conversational language. The classifier needs stronger state-aware examples distinguishing confirmation of a resolved problem from simple social acknowledgement.
 
-The classifier sometimes failed to distinguish a package that has already entered the delivery process but is late from an order that has not yet been dispatched.
+2. CUSTOMER_SERVICE vs ACCOUNT / INSUFFICIENT_CONTEXT / RESOLUTION_CONFIRMATION
 
-**Hypothesis:** Both intents describe order fulfilment delays and require temporal/state reasoning rather than simple keyword matching.
+General requests for assistance can contain account-related or conversational wording without clearly identifying an account problem.
 
----
+Hypothesis: CUSTOMER_SERVICE is a broad category that competes with several more specific intents when the customer provides little operational detail.
 
-### Failure Mode 5 — Delivery Problem vs Delivery Tracking
+3. DELIVERY_PROBLEM vs DELIVERY_TRACKING
 
-**Observed confusion:** DELIVERY_PROBLEM → DELIVERY_TRACKING
+Both categories frequently contain package, courier, delivery, and shipment vocabulary.
 
-Messages about where a package is and messages about an incorrectly delivered package can contain similar delivery vocabulary.
+The intended distinction is:
 
-**Hypothesis:** The distinction depends on the state of delivery: tracking asks for current location/status, while delivery-problem cases describe an unacceptable delivery event.
+DELIVERY_TRACKING: asking where/status of the package.
 
----
+DELIVERY_PROBLEM: reporting an unacceptable or failed delivery event.
 
-## 8. What Is Misleading About My Headline Number?
+Hypothesis: The distinction requires reasoning about the delivery state and requested outcome rather than matching delivery keywords.
 
-The most tempting headline number is the **38.50% intent-classification accuracy**.
+4. OTHER vs Specific Transactional Intents
 
-However, this number should not be interpreted as meaning that the complete support agent is 38.5% effective.
+Vague or unusual requests can be forced into recognizable categories such as PACKAGE_NOT_RECEIVED, PRODUCT_INFORMATION, or CUSTOMER_SERVICE.
 
-First, intent accuracy is only one component of the system. Reply generation, grounding, leakage prevention, and escalation are separate problems.
+Hypothesis: The model tends to prefer a recognizable specific intent when the message contains a strong keyword, even when the available context is insufficient.
 
-Second, the 200-example golden set is relatively small and contains highly uneven intent frequencies. Several intents have very few examples.
+5. DELIVERY_DELAY vs DELIVERY_TRACKING / ORDER_DISPATCH
 
-Third, classification accuracy does not measure whether a generated response is useful or safe.
+These categories depend on the shipment timeline:
 
-The reply-quality evaluation demonstrates this clearly. Across 20 examples, the generated replies achieved:
+DELIVERY_DELAY: an expected delivery is late.
 
-- Relevance: **1.65 / 2**
-- Usefulness: **1.55 / 2**
-- Grounding: **0.65 / 2**
-- Factual safety: **1.90 / 2**
-- Leakage safety: **1.90 / 2**
-- Style: **1.40 / 2**
-- Total: **9.05 / 12**
+DELIVERY_TRACKING: the customer wants current location/status.
 
-Grounding was the weakest dimension, showing that a fluent response is not necessarily well grounded in historical support patterns.
+ORDER_DISPATCH: the order has not yet been dispatched/shipped.
 
-The LLM judge also had weak agreement with the small human calibration sample: **20% exact agreement** and **−0.129 quadratic weighted kappa**. Therefore, the judge scores should be treated as supporting evidence rather than definitive measurements of reply quality.
+Hypothesis: These cases require temporal and fulfilment-state reasoning instead of keyword matching.
 
-The escalation evaluation also does not provide an accuracy measure because it has no human-labelled escalation ground truth.
+10. What Is Misleading About My Headline Number?
 
-Therefore, the **38.50% number should be presented as a baseline classification result on the manually labelled golden set, not as an overall support-agent success rate**.
+The current headline classifier result is:
 
----
+55.50% intent classification accuracy (111/200).
 
-## 9. Main Findings
+This number should not be interpreted as the success rate of the complete support agent.
 
-The experiments produced five important findings.
+It measures one component: intent classification on a frozen 200-example manually labelled golden set.
 
-### 1. More complexity did not automatically improve classification
+The complete system also includes:
 
-The baseline LLM classifier achieved **38.50%**, while the tested prompt and few-shot variants achieved **29.00%** and **35.00%**.
+retrieval,
 
-This shows that additional instructions and examples did not automatically improve classification.
+reply generation,
 
-### 2. Semantic retrieval is useful but insufficient
+grounding,
 
-Embedding-based retrieval produced semantically relevant historical examples, but intent-aware retrieval achieved **38.50% top-1 intent match**, tying rather than improving on the baseline classifier.
+safety validation,
 
-Retrieval quality therefore cannot be assumed to solve the classification problem.
+leakage prevention,
 
-### 3. Fluent replies can still be insufficiently grounded
+escalation.
 
-The generated replies passed the deterministic leakage checks on **20/20 examples**.
+Each component has separate evaluation signals and limitations.
 
-However, the LLM judge gave grounding the lowest score at **0.65/2**.
+The reply evaluation illustrates this distinction. All 20 replies passed the deterministic leakage checks, while the LLM judge produced a total score of 5.70/12 and particularly low grounding and factual-safety scores in this run.
 
-This is an important distinction: a reply can sound professional and relevant while still being insufficiently grounded in historical support patterns.
+The LLM judge also showed only 20% exact agreement with the small human calibration sample.
 
-### 4. LLM-as-judge evaluation has limitations
+Therefore the headline should be written precisely as:
 
-The LLM judge achieved an average score of **9.05/12** across the 20 evaluated replies.
+55.50% intent classification accuracy on the frozen 200-example manually labelled AmazonHelp golden evaluation set.
 
-However, comparison with the small human calibration sample produced only **20% exact agreement** and a **−0.129 quadratic weighted kappa**.
+It should not be described as overall support-agent accuracy.
 
-Therefore, the LLM judge should be treated as a supporting evaluation signal rather than a replacement for human evaluation.
+11. Main Findings
 
-### 5. The main challenge is distinguishing ambiguous support states
+Finding 1 — The current classifier improved over the original baseline
 
-The largest classification errors involved closely related intents such as:
+The original Qwen 2.5 3B classifier achieved 38.50%.
 
-- CUSTOMER_SERVICE vs RESOLUTION_CONFIRMATION
-- CUSTOMER_SERVICE vs ORDER_DISPATCH
-- DELIVERY_DELAY vs ORDER_DISPATCH
-- DELIVERY_PROBLEM vs DELIVERY_TRACKING
-- OTHER vs ORDER_CANCELLATION
+The current Qwen 2.5 7B classifier achieved 55.50% on the same frozen golden set.
 
-These failures suggest that the main difficulty is distinguishing similar support situations and conversational states rather than simply recognizing keywords.
+This is an experimental improvement on this evaluation set.
 
----
+Finding 2 — Simple baselines remain useful for context
 
-## 10. Next Week
+The TF-IDF baseline achieved 15.00%, while the majority-class baseline achieved 18.50%.
 
-The next iteration would focus on:
+These baselines establish reference points for interpreting the LLM results.
 
-1. Improving the intent taxonomy boundaries using more manually labelled examples for the most confused intents.
+Finding 3 — Semantic retrieval is useful but insufficient
 
-2. Increasing the golden-set size while preserving a clear sampling and labelling strategy.
+Semantic retrieval produced meaningful historical neighbours, but the intent-aware retrieval experiment reached 38.50% top-1 intent match and did not improve on the original LLM baseline.
 
-3. Improving retrieval with intent-aware and support-state-aware representations rather than relying only on semantic similarity.
+Retrieval is therefore better treated as contextual evidence than as a standalone solution to classification.
 
-4. Adding stronger grounding checks that detect unsupported claims about actions, investigations, account access, or order status.
+Finding 4 — Leakage safety and response quality are different dimensions
 
-5. Creating a manually labelled escalation ground truth and measuring escalation precision and recall.
+The deterministic leakage evaluator found 20/20 clean replies.
 
-6. Expanding reply-quality evaluation beyond the initial 20 examples.
+The LLM judge nevertheless identified weaknesses in grounding and factual safety.
 
-7. Recalibrating the LLM judge against a larger human-labelled sample before relying on it as a stronger evaluation signal.
+This shows that passing leakage checks does not guarantee a high-quality or fully grounded support response.
 
-8. Testing whether structured support-state information can better distinguish delivery tracking, delivery delay, dispatch, delivery problems, and package-not-received cases.
+Finding 5 — Automated judging needs human calibration
+
+The current judge produced 5.70/12, while the 10-example human calibration showed 20% exact agreement and -0.129 quadratic weighted kappa.
+
+The current judge should therefore remain a supporting metric.
+
+Finding 6 — Ambiguous support states are the main classification challenge
+
+Recurring confusion involves:
+
+CUSTOMER_SERVICE vs RESOLUTION_CONFIRMATION
+
+DELIVERY_PROBLEM vs DELIVERY_TRACKING
+
+DELIVERY_DELAY vs ORDER_DISPATCH
+
+OTHER vs specific transactional intents
+
+CUSTOMER_SERVICE vs ACCOUNT / INSUFFICIENT_CONTEXT
+
+These errors indicate that conversational and operational state is more important than isolated keywords for several categories.
+
+12. Limitations
+
+The golden evaluation set contains only 200 manually labelled examples.
+
+Intent frequencies are uneven, with some intents having very few examples.
+
+The semantic reference subset contains 3,000 examples.
+
+The reply-generation evaluation contains only 20 examples.
+
+The escalation evaluation has no human-labelled ground truth.
+
+Escalation percentages therefore represent policy behaviour rather than accuracy.
+
+The deterministic leakage checker only covers the implemented patterns.
+
+The LLM judge showed weak agreement with the small human calibration sample.
+
+Some judge scores were inconsistent with their textual explanations.
+
+Local model behaviour can vary with model versions and runtime configuration.
+
+Generated replies are drafts and do not execute real customer-support actions.
+
+The results should therefore be treated as experimental evidence rather than production-level benchmarks.
+
+13. One-Week Next Steps
+
+Increase manual labels for the most confused intent pairs.
+
+Improve state-aware classification for delay, tracking, dispatch, delivery problems, and package-not-received cases.
+
+Add stronger handling for short acknowledgements such as "thanks", "done", and "okay".
+
+Add stronger grounding validation for unsupported claims about actions, investigations, account access, policies, and order status.
+
+Create a manually labelled escalation ground-truth set.
+
+Expand reply-quality evaluation beyond 20 examples.
+
+Recalibrate the LLM judge using a larger human-labelled sample.
+
+Improve retrieval using intent-aware and support-state-aware representations.
+
+14. Conclusion
+
+The project demonstrates an experimental AI customer-support pipeline built from real AmazonHelp support conversations.
+
+The current classifier achieved:
+
+111 / 200 = 55.50%
+
+on the frozen manually labelled golden set.
+
+The system also demonstrates:
+
+historical semantic retrieval,
+
+grounded response generation,
+
+deterministic leakage detection,
+
+rule-based escalation,
+
+automated reply-quality evaluation,
+
+and human calibration of the LLM judge.
+
+The main lesson is that building a useful support agent requires more than generating fluent text. Intent boundaries, historical evidence, grounding, safety validation, and escalation policy each introduce separate failure modes and therefore need separate evaluation.

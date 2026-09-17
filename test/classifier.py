@@ -1,5 +1,12 @@
+import os
+
 import requests
 from intent_definitions import INTENT_DEFINITIONS
+
+
+OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://localhost:11434/api/generate")
+MODEL = os.environ.get("OLLAMA_MODEL", "qwen2.5:3b")
+SEED = int(os.environ.get("OLLAMA_SEED", "42"))
 
 
 def classify(customer_message):
@@ -25,13 +32,14 @@ Rules:
 """
 
     response = requests.post(
-        "http://localhost:11434/api/generate",
+        OLLAMA_URL,
         json={
-            "model": "qwen2.5:3b",
+            "model": MODEL,
             "prompt": prompt,
             "stream": False,
             "options": {
-                "temperature": 0
+                "temperature": 0,
+                "seed": SEED,
             }
         }
     )

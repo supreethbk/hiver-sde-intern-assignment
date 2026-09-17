@@ -1,21 +1,21 @@
 example_id,generated_reply,url,twitter_url,placeholder,username,agent_initials,signature,violations,leakage_detected
-96,I understand your concern. Could you please provide the complete order details and the courier information so we can assist you better?,False,False,False,False,False,False,,False
-16,I apologize for any inconvenience. Please contact us via phone or chat for further assistance.,False,False,False,False,False,False,,False
-31,I received your message and understand your concern. Please provide the necessary details via the link we will send you.,False,False,False,False,False,False,,False
-159,ありがとうございます😊またのご利用をお待ちしております。,False,False,False,False,False,False,,False
-129,"I understand you're concerned about your package. To help us investigate, could you please provide your account details using the link below? We will then look into your package status.",False,False,False,False,False,False,,False
-116,"I understand you're waiting for a replacement. Please check your registered email for any correspondence related to your order. If you need further assistance, you can contact us directly.",False,False,False,False,False,False,,False
-70,I understand your concern with phone issues. Could you please let me know if this is happening across all regions or a specific one?,False,False,False,False,False,False,,False
-171,"I see you've reached out. If you need further assistance, please feel free to contact us directly.",False,False,False,False,False,False,,False
-175,I understand your concern. Please contact the seller support using the link provided.,False,False,False,False,False,False,,False
-46,Thank you for your response. We have noted your message and will get back to you shortly.,False,False,False,False,False,False,,False
-67,I understand this is a concern. Could you please provide more details about the specific product or service you ordered?,False,False,False,False,False,False,,False
-183,I understand your confusion about the delivery status of your items from different sellers. Could you please confirm the original estimated delivery date provided in your order confirmation email? I'll keep you updated and will contact you if the issue persists.,False,False,False,False,False,False,,False
-166,I understand your frustration with the current status. Please keep me updated if there are any changes or developments regarding your order.,False,False,False,False,False,False,,False
-79,I understand you're frustrated. Could you please provide more details about the issue you're facing so we can assist you better?,False,False,False,False,False,False,,False
-187,"You're welcome! If you need any further assistance, feel free to reach out.",False,False,False,False,False,False,,False
-178,I understand your concern. Please let me know your preferred delivery location in case the package cannot be delivered to your current address. We will keep you updated.,False,False,False,False,False,False,,False
-57,Thank you for your patience. We will keep you informed with any further updates.,False,False,False,False,False,False,,False
-153,"Understood, please provide more details so we can assist you further.",False,False,False,False,False,False,,False
-83,I understand you're experiencing frustration with the delivery status. Could you please provide any relevant order details or contact information for the courier so we can investigate further?,False,False,False,False,False,False,,False
-69,I understand you're having trouble understanding the reasons provided. I suggest reaching out to our support team via phone or chat for further assistance.,False,False,False,False,False,False,,False
+96,"I understand you're having trouble finding the courier information. If you can provide more details about the courier, we can try contacting them for you.",False,False,False,False,False,False,,False
+16,I understand you're upset about the cancellation of your order. We will ensure to handle such situations with the utmost care and respect.,False,False,False,False,False,False,,False
+31,"I understand your concern. Please provide the details you mentioned previously, and we will review them as soon as possible.",False,False,False,False,False,False,,False
+159,ありがとうございます。お手数をおかけしましたが、今後ともご信任いただければ幸いです。,False,False,False,False,False,False,,False
+129,I understand you're concerned about your package. We can look into this further for you. Please contact us here so that we can explore options together.,False,False,False,False,False,False,,False
+116,I understand you're concerned about the status of your replacement order. Please provide your order number so we can check the current status for you.,False,False,False,False,False,False,,False
+70,Are you able to log into your Amazon account through a computer or do you get the same error message there?,False,False,False,False,False,False,,False
+171,I understand you haven't heard back from us. Could you please check if you received any email from us?,False,False,False,False,False,False,,False
+175,I understand the concern about the seller being listed as LLC. Have you tried contacting the seller to inquire about the delivery status?,False,False,False,False,False,False,,False
+46,"I understand you've replied multiple times. Please keep us updated, and we will assist you further.",False,False,False,False,False,False,,False
+67,"Je comprends votre situation. Si le livreur ne peut pas vous livrer à votre lieu de travail, pouvez-vous nous indiquer un autre point de livraison ou une autre adresse où vous pourriez recevoir votre colis ?",False,False,False,False,False,False,,False
+183,"I understand your concern. If one item is on its way today, it's possible the other item is still in transit or awaiting dispatch. Please keep us updated if you need further assistance.",False,False,False,False,False,False,,False
+166,"I understand your concern. Please keep us updated, and we'll take a closer look at your order.",False,False,False,False,False,False,,False
+79,Je comprends que vous êtes frustré par cette situation. Pourriez-vous me dire quel transporteur prend en charge votre commande ?,False,False,False,False,False,False,,False
+187,We're still here if you need to reach out again! Let us know how your conversation goes.,False,False,False,False,False,False,,False
+178,I understand your concern. Could you please check if you have set a safe place for the parcel to be left if there is no one in?,False,False,False,False,False,False,,False
+57,Tenez-nous au courant s'il vous plaît. Votre nouvelle date de livraison est estimée pour le 16 octobre.,False,False,False,False,False,False,,False
+153,I understand your concern. Could you please share your order details so we can look into this further?,False,False,False,False,False,False,,False
+83,I understand you're experiencing ongoing issues with your order being marked as delivered despite it not arriving. Let's keep this issue updated and let's see if we can find a resolution together.,False,False,False,False,False,False,,False
+69,I understand you're still unsure about the reason for the packaging. Let's try reaching out via phone or chat so we can look further into this.,False,False,False,False,False,False,,False
