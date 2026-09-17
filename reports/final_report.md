@@ -1,5 +1,6 @@
 Hiver Support-Agent Final Report
 
+
 1. Problem Framing
 
 The goal is to build a small AI customer-support agent using real historical customer-support conversations from the Customer Support on Twitter (TWCS) dataset.
@@ -21,6 +22,7 @@ The target brand is AmazonHelp.
 The project deliberately does not attempt to access real customer accounts, perform refunds/cancellations, modify orders, contact customers, or replace human support workflows. The generated response is a draft.
 
 The main challenge is therefore not just fluent text generation. The system must distinguish closely related support situations, use historical evidence without leaking artifacts, avoid unsupported operational claims, and recognize cases that should be escalated.
+
 
 2. Dataset and Evaluation Set
 
@@ -84,6 +86,7 @@ WEBSITE_OR_APP
 
 The 200 golden examples were excluded from the historical reference pool to reduce direct evaluation leakage.
 
+
 3. System Approach
 
 Stage 1 — Intent Classification
@@ -138,6 +141,7 @@ Sensitive or operational cases are generally routed toward escalation.
 
 The escalation result is treated as a policy outcome, not an accuracy metric, because the current evaluation data has no human-labelled escalation ground truth.
 
+
 4. Baselines and Intent Results
 
 The same frozen 200-example golden set was used for classifier comparisons.
@@ -186,6 +190,7 @@ The result should be treated as an experimental benchmark on 200 manually labell
 
 The largest observed errors are concentrated around semantically similar support states rather than completely unrelated topics.
 
+
 5. Retrieval Results
 
 TF-IDF
@@ -207,6 +212,7 @@ Qualitative inspection showed semantically meaningful neighbours. However, the i
 This did not improve on the original LLM classifier.
 
 The result supports using retrieval as historical context for response generation rather than assuming semantic similarity alone can solve intent classification.
+
 
 6. Reply Generation Evaluation
 
@@ -284,6 +290,7 @@ The judge output suggests that response relevance and style were stronger than g
 
 However, some numerical scores were inconsistent with the accompanying judge explanations. Therefore, these scores are treated as a supporting evaluation signal, not ground truth.
 
+
 7. Human Calibration of the LLM Judge
 
 A small independent human calibration sample of 10 replies was compared with the LLM judge.
@@ -297,6 +304,7 @@ Quadratic weighted kappa: -0.129
 The sample is small, so this is not a production reliability estimate.
 
 The result nevertheless provides evidence that the current judge should not replace human evaluation. A larger human-labelled calibration set would be needed before relying on the judge as a strong quality metric.
+
 
 8. Escalation Results
 
@@ -333,6 +341,7 @@ AUTO_HANDLE: 63 / 200 = 31.5%
 ESCALATE: 137 / 200 = 68.5%
 
 These numbers describe the behaviour of the implemented escalation policy. They are not escalation accuracy, because no human-labelled escalation ground truth is available.
+
 
 9. Top Five Failure Modes
 
@@ -382,6 +391,7 @@ ORDER_DISPATCH: the order has not yet been dispatched/shipped.
 
 Hypothesis: These cases require temporal and fulfilment-state reasoning instead of keyword matching.
 
+
 10. What Is Misleading About My Headline Number?
 
 The current headline classifier result is:
@@ -417,6 +427,7 @@ Therefore the headline should be written precisely as:
 55.50% intent classification accuracy on the frozen 200-example manually labelled AmazonHelp golden evaluation set.
 
 It should not be described as overall support-agent accuracy.
+
 
 11. Main Findings
 
@@ -470,6 +481,7 @@ CUSTOMER_SERVICE vs ACCOUNT / INSUFFICIENT_CONTEXT
 
 These errors indicate that conversational and operational state is more important than isolated keywords for several categories.
 
+
 12. Limitations
 
 The golden evaluation set contains only 200 manually labelled examples.
@@ -496,6 +508,7 @@ Generated replies are drafts and do not execute real customer-support actions.
 
 The results should therefore be treated as experimental evidence rather than production-level benchmarks.
 
+
 13. One-Week Next Steps
 
 Increase manual labels for the most confused intent pairs.
@@ -513,6 +526,7 @@ Expand reply-quality evaluation beyond 20 examples.
 Recalibrate the LLM judge using a larger human-labelled sample.
 
 Improve retrieval using intent-aware and support-state-aware representations.
+
 
 14. Conclusion
 
